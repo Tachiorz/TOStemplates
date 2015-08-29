@@ -1,0 +1,43 @@
+typedef struct
+{
+	short size;
+
+	int handle;
+	float x,y,z;
+	float dx, dy;
+	MonsterType type;
+	byte b1; // bool?
+	int hp, maxHp;
+	short s1;
+	float i1;
+
+	// MONSTER
+	int monsterId;
+	int i2;
+	int maxhp;
+	//short s2; // max shield?
+	//char bin1[2];
+	float f0;
+	int level;
+	float sdr;
+	byte b2;
+	char bin2[3];
+
+	int GenType;
+	int i5;
+	byte b3;
+	byte b4;
+
+	short nameLen;
+	char name[nameLen];
+	short unameLen;
+	char uname[unameLen];
+	short str1Len;
+	char str1[str1Len];
+	short str2Len;
+	char str2[str2Len];
+	short str3Len;
+	char str3[str3Len];
+
+	char bin3[b3];
+} ZC_ENTER_MONSTER <optimize=false>;

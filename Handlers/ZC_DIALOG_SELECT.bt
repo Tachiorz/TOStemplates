@@ -1,0 +1,17 @@
+//--------------------------------------
+//--- 010 Editor v6.0.2 Binary Template
+//
+// File: ZC_DIALOG_SELECT.bt
+// Author: exec, tachiorz
+// Revision:
+// Purpose:
+//--------------------------------------
+
+typedef struct
+{
+	short size;
+
+	int handle;
+	short count;
+	lpString strings[count] <optimize=false>;
+} ZC_DIALOG_SELECT <optimize=false>;

@@ -1,0 +1,29 @@
+#include "Handlers\packet_common.bt"
+
+local uint BC_COMMANDER_LIST_CurPos;
+typedef struct
+{
+	short size;
+
+	uint64 SessionId;
+	byte b1;
+	byte CharacterCount;
+	char TeamName[64];
+	lpString someString;
+    local int i;
+    local int item;
+	for (i = 0; i < CharacterCount; ++i)
+	{
+		Character character;
+		for (item = 0; item < 20; ++item)
+		{
+            short item_prop_size;
+            BC_COMMANDER_LIST_CurPos = FTell();
+		  	while (FTell()-BC_COMMANDER_LIST_CurPos < item_prop_size)
+		  	{
+		    	property itemprop;
+			}
+		}
+		short s;
+	}
+} BC_COMMANDER_LIST <optimize=false>;

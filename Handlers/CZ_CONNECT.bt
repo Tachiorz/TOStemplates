@@ -1,0 +1,14 @@
+typedef struct
+{
+    short len; //?
+    short w1;
+    int64 id;
+    int d1;
+    int d2;
+    char name[33];
+    int d3;
+    short w2;
+    byte b1;
+    byte b2;
+    byte b3;
+} CZ_CONNECT <optimize=false>;

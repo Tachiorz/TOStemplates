@@ -1,0 +1,20 @@
+//--------------------------------------
+//--- 010 Editor v6.0.2 Binary Template
+//
+// File: ZC_SYSTEM_MSG.bt
+// Author: exec, tachiorz
+// Revision: 1
+// Purpose:
+//--------------------------------------
+
+typedef struct
+{
+	short size;
+
+	int clientMessage;
+	byte paramCount;
+	byte type; // 0 = also show in red letters on screen, 1 = don't
+
+	if(paramCount != 0)
+	    msgParameter parameters[paramCount] <optimize=false>;
+} ZC_SYSTEM_MSG <optimize=false>;

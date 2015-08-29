@@ -1,0 +1,28 @@
+#include "OP.bt"
+#include "Handlers.bt"
+
+//local time_t Time;
+local int Length;
+local int Type;
+local ushort Op;
+local string PacketName;
+local int CurrentPos;
+while(!FEof())
+{
+    CurrentPos = FTell(); FSkip(12);
+    Length = ReadUShort(); FSkip(2);
+    Type = ReadByte(); FSkip(1);
+    FSeek(CurrentPos);
+    
+    if (Type == CLIENT)
+    {
+        ClientPacket RECV <read=DisplayClientPacket>;
+    }
+    else
+    {
+        ServerPacket SEND <read=DisplayServerPacket>;
+    }
+    FSkip(Length - (FTell() - CurrentPos - 15));
+    //local PacketHeader packet;
+    
+}

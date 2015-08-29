@@ -1,0 +1,13 @@
+local uint ZC_OBJECT_PROPERTY_CurPos;
+
+typedef struct
+{
+
+  short size;
+  int64 charID;
+  ZC_OBJECT_PROPERTY_CurPos = FTell();
+  while (FTell()-ZC_OBJECT_PROPERTY_CurPos < size-16)
+  {
+    property prop;
+  }
+} ZC_OBJECT_PROPERTY <optimize=false>;

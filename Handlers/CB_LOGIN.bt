@@ -1,0 +1,8 @@
+typedef struct
+{
+	char accountName[33];
+	byte passwordMD5[16];
+	byte unkByte1;
+	byte unkByte2;
+	ubyte ip[4];
+} CB_LOGIN <optimize=false>;
