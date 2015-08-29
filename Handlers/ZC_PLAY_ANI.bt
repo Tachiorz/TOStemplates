@@ -1,0 +1,9 @@
+typedef struct
+{
+    uint32 unkSchrageId1;
+    uint32 unkSchrageId2;
+    byte isUnk1;
+    byte isUnk2;
+    float timeDelay;
+    float unk5;
+} ZC_PLAY_ANI <optimize=false>;

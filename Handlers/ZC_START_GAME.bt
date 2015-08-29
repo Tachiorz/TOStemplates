@@ -1,0 +1,7 @@
+typedef struct
+{
+    float timeMultiplier;
+    float serverAppTimeOffset;
+    float globalAppTimeOffset;
+    double serverDateTime;
+} ZC_START_GAME <optimize=false>;

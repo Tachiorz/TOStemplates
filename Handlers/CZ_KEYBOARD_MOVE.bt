@@ -1,0 +1,10 @@
+typedef struct
+{
+    byte unk;
+    Position Pos;
+    Vector Dir;
+    byte unk2;
+    float movementSpeed;
+    byte unk3;
+    float timestamp;
+} CZ_KEYBOARD_MOVE <optimize=false>; 

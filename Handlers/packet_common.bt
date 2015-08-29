@@ -3,8 +3,7 @@ typedef struct
 	char Name[65];
 	char TeamName[64];
 	byte bin1[7];
-	int d1;
-	int d2;
+	uint64 accountId;
 	short Stance;
 	short s1;
 	short Job;
@@ -12,32 +11,48 @@ typedef struct
 	byte b1;
 	int Level;
 	int Items[20];
-	byte Hair;
-	byte b2;
-	short s2;
-	uint64 CharacterId;
-	byte index;
+	uint16 Hair;
+	uint16 Pose;
+} Commander <optimize=false>;
 
-	byte b3;
-	short ZoneId;
+typedef struct
+{
+	Commander commander;
+	uint64 socialInfoId;
+	uint16 index;
+	uint16 mapId;
 	int d3;
 	int d4;
-	int d5;
+	int maxXP;
 	int d6;
-
-	Position position; 
-	Vector vector;
-
-	float f1;
-	float f2;
-	float f3;
-	float f4;
-	float f5;
+	Position position1; 
+	Vector vector1;
+	Position position2; 
+	Vector vector2;
 	int d7;
-} Character <optimize=false>;
+} CommanderCreateInfo <optimize=false>;
+
+typedef struct
+{
+    Commander base;
+    Position pos;
+    uint32 currentXP;
+    uint32 maxXP;
+    uint32 pcId;
+    uint64 socialInfoId;
+    uint64 commanderId;
+    uint32 currentHP;
+    uint32 maxHP;
+    uint16 currentSP;
+    uint16 maxSP;
+    uint32 currentStamina;
+    uint32 maxStamina;
+    uint16 unk6;
+    uint16 unk7;
+} CommanderInfo <optimize=false>;
 
 typedef struct
 {
 	short size;
 	int subOp;
-} BC_NORMAL_header <optimize=false>;
+} NORMAL_header <optimize=false>;

@@ -1,0 +1,10 @@
+typedef struct
+{
+    uint32 pcId;
+    Position position;
+    Vector direction;
+    byte unk1;
+    byte unk2;
+    uint32 unk3;
+    float timestamp;
+} ZC_MOVE_DIR <optimize=false>;

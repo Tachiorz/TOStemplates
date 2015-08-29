@@ -1,0 +1,7 @@
+typedef struct
+{
+    uint32 pcId;
+    float height;
+    uint32 unk1;
+    byte unk2;
+} ZC_JUMP <optimize=false>;

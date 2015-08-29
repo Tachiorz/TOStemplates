@@ -1,0 +1,3 @@
+typedef struct {
+    lpString msgText;
+} CZ_CHAT <optimize=false>; 

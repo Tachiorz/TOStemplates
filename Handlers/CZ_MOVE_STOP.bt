@@ -1,0 +1,7 @@
+typedef struct
+{
+    byte unk;
+    Position Pos;
+    Vector Dir;
+    float timestamp;
+} CZ_MOVE_STOP <optimize=false>; 

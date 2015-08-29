@@ -1,0 +1,8 @@
+typedef struct
+{
+    uint32 pcId;
+    Position position;
+    byte unk1;
+    Vector direction;
+    float timestamp;
+} ZC_PC_MOVE_STOP <optimize=false>;

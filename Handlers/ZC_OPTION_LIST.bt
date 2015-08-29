@@ -1,0 +1,5 @@
+typedef struct
+{
+    uint16 unk1;
+    byte unk2;
+} ZC_OPTION_LIST <optimize=false>;

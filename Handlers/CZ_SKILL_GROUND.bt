@@ -1,0 +1,12 @@
+typedef struct {
+    byte unk1;
+    uint32 skillId;
+    uint32 unk2;
+    Position pos1;
+    Position pos2;
+    float unk3;
+    uint32 unk4;
+    uint32 unk5;
+    byte unk6;
+    byte unk7;
+} CZ_SKILL_GROUND <optimize=false>; 

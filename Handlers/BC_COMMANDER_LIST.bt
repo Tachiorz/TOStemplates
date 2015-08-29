@@ -14,7 +14,7 @@ typedef struct
     local int item;
 	for (i = 0; i < CharacterCount; ++i)
 	{
-		Character character;
+		CommanderCreateInfo character;
 		for (item = 0; item < 20; ++item)
 		{
             short item_prop_size;

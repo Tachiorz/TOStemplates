@@ -1,0 +1,10 @@
+typedef struct
+{
+    uint32 pcId;
+    uint32 skillId;
+    float unk3;
+    uint16 unk4;
+    uint16 unk5;
+    Position pos1;
+    Position pos2;
+} ZC_SKILL_READY <optimize=false>;

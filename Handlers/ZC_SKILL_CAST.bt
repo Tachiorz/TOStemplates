@@ -1,0 +1,8 @@
+typedef struct
+{
+    uint32 pcId;
+    uint16 unk2;
+    uint16 unk3;
+    Position position1;
+    Position position2;
+} ZC_SKILL_CAST <optimize=false>;

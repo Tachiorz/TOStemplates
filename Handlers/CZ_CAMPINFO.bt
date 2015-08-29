@@ -1,0 +1,4 @@
+typedef struct
+{
+    uint64 accountId;
+} CZ_CAMPINFO <optimize=false>; 

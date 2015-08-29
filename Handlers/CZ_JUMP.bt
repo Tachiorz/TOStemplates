@@ -1,0 +1,4 @@
+typedef struct
+{
+    byte unk;
+} CZ_JUMP <optimize=false>; 

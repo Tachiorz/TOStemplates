@@ -1,5 +1,5 @@
-local int BC_NORMAL_SUBOP;
-local uint BC_NORMAL_CurrentPos;
+local int NORMAL_SUBOP;
+local uint NORMAL_CurrentPos;
 typedef struct 
 {
     Frame header;
@@ -17,11 +17,11 @@ switch( GetPacketName(Op) )
 	case "BC_START_GAMEOK": BC_START_GAMEOK packet; break;
 	
 	case "BC_NORMAL":
-		BC_NORMAL_CurrentPos = FTell();
+		NORMAL_CurrentPos = FTell();
 		FSkip(2); // skip size
-		BC_NORMAL_SUBOP = ReadUShort();
-		FSeek(BC_NORMAL_CurrentPos);
-		switch (BC_NORMAL_SUBOP)
+		NORMAL_SUBOP = ReadUShort();
+		FSeek(NORMAL_CurrentPos);
+		switch (NORMAL_SUBOP)
 		{
 			case 0x2: BC_NORMAL_COMMANDER_MOVE_OK packet; break;
 			case 0x4: BC_NORMAL_UNKNOWN_1 packet; break;
@@ -35,7 +35,53 @@ switch( GetPacketName(Op) )
 	case "ZC_ADDON_MSG": ZC_ADDON_MSG packet; break;
 	case "ZC_DIALOG_SELECT": ZC_DIALOG_SELECT packet; break;
 	case "ZC_SYSTEM_MSG": ZC_DIALOG_SELECT packet; break;
+
+	case "ZC_PC_MOVE_STOP": ZC_PC_MOVE_STOP packet; break;
+	case "ZC_MOVE_DIR": ZC_MOVE_DIR packet; break;
+	case "ZC_CONNECT_OK": ZC_CONNECT_OK packet; break;
+	case "ZC_JUMP": ZC_JUMP packet; break;
+	case "ZC_CHAT": ZC_CHAT packet; break;
+	case "ZC_MOVE_SPEED": ZC_MOVE_SPEED packet; break;
+	case "ZC_GUESTPAGE_MAP": ZC_GUESTPAGE_MAP packet; break;
+	case "ZC_MYPC_ENTER": ZC_MYPC_ENTER packet; break;
+	case "ZC_OPTION_LIST": ZC_OPTION_LIST packet; break;
+	case "ZC_SKILLMAP_LIST": ZC_SKILLMAP_LIST packet; break;
+	case "ZC_ACHIEVE_POINT_LIST": ZC_ACHIEVE_POINT_LIST packet; break;
+	case "ZC_CHAT_MACRO_LIST": ZC_CHAT_MACRO_LIST packet; break;
+	case "ZC_UI_INFO_LIST": ZC_UI_INFO_LIST packet; break;
+	case "ZC_NPC_STATE_LIST": ZC_NPC_STATE_LIST packet; break;
+	case "ZC_MYPAGE_MAP": ZC_MYPAGE_MAP packet; break;
+	case "ZC_SET_POS": ZC_SET_POS packet; break;
+	case "ZC_START_INFO": ZC_START_INFO packet; break;
+	case "ZC_SKILL_LIST": ZC_SKILL_LIST packet; break;
+	case "ZC_ABILITY_LIST": ZC_ABILITY_LIST packet; break;
+	case "ZC_COOLDOWN_LIST": ZC_COOLDOWN_LIST packet; break;
+	case "ZC_QUICK_SLOT_LIST": ZC_QUICK_SLOT_LIST packet; break;
+	case "ZC_START_GAME": ZC_START_GAME packet; break;
+	case "ZC_ENTER_PC": ZC_ENTER_PC packet; break;
+	case "ZC_LEAVE": ZC_LEAVE packet; break;
+	case "ZC_BUFF_LIST": ZC_BUFF_LIST packet; break;
+	case "ZC_LOGIN_TIME": ZC_LOGIN_TIME packet; break;
+	case "ZC_PLAY_SKILL_CAST_ANI": ZC_PLAY_SKILL_CAST_ANI packet; break;
+	case "ZC_SKILL_CAST": ZC_SKILL_CAST packet; break;
+	case "ZC_PLAY_ANI": ZC_PLAY_ANI packet; break;
+	case "ZC_SKILL_READY": ZC_SKILL_READY packet; break;
+	case "ZC_REST_SIT": ZC_REST_SIT packet; break;
 	
+	case "ZC_NORMAL":
+		NORMAL_CurrentPos = FTell();
+		FSkip(2); // skip size
+		NORMAL_SUBOP = ReadUShort();
+		FSeek(NORMAL_CurrentPos);
+		switch (NORMAL_SUBOP)
+		{
+			case 0xC9: ZC_NORMAL_UNK6 packet; break;
+			case 0xE1: ZC_NORMAL_UNK7 packet; break;
+			case 0x54: ZC_NORMAL_UNK8 packet; break;
+			case 0x124: ZC_NORMAL_UNK9 packet; break;
+		}
+		break;
+
     default: byte UNKNOWN[Length-6] <optimize=false, fgcolor=0x666666>;
 }
 

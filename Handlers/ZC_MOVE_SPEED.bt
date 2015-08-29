@@ -1,0 +1,6 @@
+typedef struct
+{
+        uint32 pcId;
+        float movementSpeed;
+        uint32 unk1;
+} ZC_MOVE_SPEED <optimize=false>;

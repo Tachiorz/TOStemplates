@@ -1,0 +1,15 @@
+typedef struct
+{
+	NORMAL_header header;
+    uint32 unk1;
+    uint32 socialId;
+    byte unk2;
+    uint64 accountId;
+    uint64 accountId_2;
+    char familyName [64];
+    uint32 unk3[3];
+    uint32 pcId;
+    char familyName_2 [64];
+    char commanderName [64];
+    byte unk4[48];
+} ZC_NORMAL_UNK7 <optimize=false>;

@@ -2,6 +2,6 @@
 
 typedef struct
 {
-	BC_NORMAL_header header;
+	NORMAL_header header;
 	uint petsCount;
 } BC_NORMAL_PET_INFORMATION <optimize=false>;

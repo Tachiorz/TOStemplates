@@ -2,7 +2,7 @@
 
 typedef struct
 {
-	BC_NORMAL_header header;
+	NORMAL_header header;
 	uint64 accountId;
 	uint unk1;
 	Position Pos;

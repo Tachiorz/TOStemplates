@@ -1,0 +1,7 @@
+typedef struct
+{
+	uint16 size;
+	
+    uint32 pcId;
+    uint16 numberEntries;
+} ZC_ABILITY_LIST <optimize=false>;

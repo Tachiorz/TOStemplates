@@ -1,0 +1,5 @@
+typedef struct
+{
+    uint32 pcId;
+    Position position;
+} ZC_SET_POS <optimize=false>;

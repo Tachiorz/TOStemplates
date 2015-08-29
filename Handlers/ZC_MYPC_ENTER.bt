@@ -1,0 +1,4 @@
+typedef struct
+{
+    Position position;
+} ZC_MYPC_ENTER <optimize=false>;

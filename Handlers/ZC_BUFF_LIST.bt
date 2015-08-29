@@ -1,0 +1,6 @@
+typedef struct
+{
+    uint16 unk1;
+    uint32 pcId;
+    byte  unk2;
+} ZC_BUFF_LIST <optimize=false>;

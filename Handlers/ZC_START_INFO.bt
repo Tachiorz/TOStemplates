@@ -1,0 +1,9 @@
+typedef struct
+{
+    uint16 unk1;
+    uint32 unk2;
+    uint16 unk3;
+    uint32 unk4;
+    uint32 unk5;
+    uint16 unk6;
+} ZC_START_INFO <optimize=false>;

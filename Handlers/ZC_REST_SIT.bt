@@ -1,0 +1,5 @@
+typedef struct
+{
+    uint32 pcId;
+    byte isSit;
+} ZC_REST_SIT <optimize=false>;

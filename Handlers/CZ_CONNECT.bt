@@ -2,13 +2,11 @@ typedef struct
 {
     short len; //?
     short w1;
-    int64 id;
-    int d1;
-    int d2;
+    int64 accountId;
+    int64 characterId;
     char name[33];
-    int d3;
-    short w2;
-    byte b1;
-    byte b2;
-    byte b3;
+    byte unk4;
+    uint32 zoneServerIndex;
+    uint16 unk3;
+    byte channelListId;
 } CZ_CONNECT <optimize=false>;

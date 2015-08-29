@@ -1,0 +1,14 @@
+typedef struct
+{
+	NORMAL_header header;
+    uint32 pcId;
+    uint32 unk1;
+    uint32 skillId;
+    uint32 skillLevel; // ? not sure
+    Position pos;
+    uint32 unk2;
+    float f1;
+    uint32 unk3;
+    float f2;
+    byte gap[33];
+} ZC_NORMAL_UNK8 <optimize=false>;
