@@ -35,3 +35,9 @@ typedef struct
 	float f5;
 	int d7;
 } Character <optimize=false>;
+
+typedef struct
+{
+	short size;
+	int subOp;
+} BC_NORMAL_header <optimize=false>;

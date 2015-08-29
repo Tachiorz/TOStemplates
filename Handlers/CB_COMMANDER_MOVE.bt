@@ -1,0 +1,6 @@
+typedef struct
+{
+	byte Index;
+	Position Pos;
+	Vector Dir;
+} CB_COMMANDER_MOVE <optimize=false>;

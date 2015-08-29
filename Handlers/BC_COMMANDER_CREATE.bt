@@ -1,0 +1,4 @@
+typedef struct
+{
+	Character ch;
+} BC_COMMANDER_CREATE <optimize=false>;

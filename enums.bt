@@ -1,6 +1,13 @@
+typedef enum
+{
+    CLIENT = 0,
+    SERVER = 1,
+} PacketType;
+
 enum<byte> MonsterType
 {
     UNKNOWN = 0,
     MONSTER = 1,
     NPC = 2
 };
+

@@ -1,0 +1,8 @@
+typedef struct
+{
+	byte charPosition;
+	char Name[65];
+	short Gender;
+	Position Pos;
+	byte Hair;
+} CB_COMMANDER_CREATE <optimize=false>;

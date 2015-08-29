@@ -1,81 +1,33 @@
-#include "common.bt"
-#include "enums.bt"
-
+// Client -> Barrack
 #include "Handlers\CB_LOGIN.bt"
-#include "Handlers\CZ_CONNECT.bt"
+#include "Handlers\CB_CURRENT_BARRACK.bt"
+#include "Handlers\CB_BARRACKNAME_CHANGE.bt"
+#include "Handlers\CB_COMMANDER_CREATE.bt"
+#include "Handlers\CB_COMMANDER_DESTROY.bt"
+#include "Handlers\CB_COMMANDER_MOVE.bt"
+#include "Handlers\CB_START_GAME.bt"
+
+// Barrack -> Client
 #include "Handlers\BC_LOGINOK.bt"
 #include "Handlers\BC_IES_MODIFY_LIST.bt"
 #include "Handlers\BC_COMMANDER_LIST.bt"
+#include "Handlers\BC_COMMANDER_CREATE.bt"
+#include "Handlers\BC_COMMANDER_DESTROY.bt"
+#include "Handlers\BC_BARRACKNAME_CHANGE.bt"
+#include "Handlers\BC_SERVER_ENTRY.bt"
+#include "Handlers\BC_START_GAMEOK.bt"
+// BC_NORMAL
+#include "Handlers\BC_NORMAL_COMMANDER_MOVE_OK.bt"
+#include "Handlers\BC_NORMAL_UNKNOWN_1.bt"
+#include "Handlers\BC_NORMAL_PET_INFORMATION.bt"
+#include "Handlers\BC_NORMAL_ZONE_TRAFFIC.bt"
+
+// Client -> Zone
+#include "Handlers\CZ_CONNECT.bt"
+
+// Zone -> Client
 #include "Handlers\ZC_OBJECT_PROPERTY.bt"
 #include "Handlers\ZC_ENTER_MONSTER.bt"
 #include "Handlers\ZC_ADDON_MSG.bt"
 #include "Handlers\ZC_DIALOG_SELECT.bt"
 #include "Handlers\ZC_SYSTEM_MSG.bt"
-
-
-typedef enum
-{
-    CLIENT = 0,
-    SERVER = 1,
-} PacketType;
-
-typedef struct 
-{
-    char Time[12];
-    ushort Length;
-    byte Type;
-} Frame <optimize=false>;
-
-typedef struct 
-{
-    Frame header;
-    short Op;
-    uint idx;
-    uint crc;
-switch( GetPacketName(Op) ) 
-{
-    case "CB_LOGIN": CB_LOGIN packet; break;
-    case "CZ_CONNECT": CZ_CONNECT packet; break;
-    default: byte UNKNOWN[Length-10] <optimize=false, fgcolor=0x666666>;
-}
-
-} ClientPacket <optimize=false, bgcolor=0xAAFFAA>;
-
-string DisplayClientPacket(ClientPacket &p)
-{
-    local string PacketDisplayStr;
-    PacketName = GetPacketName(p.Op);
-    //local string time = TimeTToString( p.header.Time, "hh:mm:ss" );
-    SPrintf(PacketDisplayStr, "SEND@%s: %s (%d)", p.header.Time, PacketName, p.Op);
-    return PacketDisplayStr;
-}
-
-typedef struct 
-{
-    Frame header;
-    short Op;
-    uint idx;
-switch( GetPacketName(Op) ) 
-{
-	case "BC_LOGINOK": BC_LOGINOK packet; break;
-	case "BC_IES_MODIFY_LIST": BC_IES_MODIFY_LIST packet; break;
-	case "BC_COMMANDER_LIST": BC_COMMANDER_LIST packet; break;
-	case "ZC_OBJECT_PROPERTY": ZC_OBJECT_PROPERTY packet; break;
-	case "ZC_ENTER_MONSTER": ZC_ENTER_MONSTER packet; break;
-	case "ZC_ADDON_MSG": ZC_ADDON_MSG packet; break;
-	case "ZC_DIALOG_SELECT": ZC_DIALOG_SELECT packet; break;
-	case "ZC_SYSTEM_MSG": ZC_DIALOG_SELECT packet; break;
-	
-    default: byte UNKNOWN[Length-6] <optimize=false, fgcolor=0x666666>;
-}
-
-} ServerPacket <optimize=false, bgcolor=0xAAAAFF>;
-
-string DisplayServerPacket(ServerPacket &p)
-{
-    local string PacketDisplayStr;
-    PacketName = GetPacketName(p.Op);
-    //local string time = TimeTToString( p.header.Time, "hh:mm:ss" );
-    SPrintf(PacketDisplayStr, "RECV@%s: %s (%d)", p.header.Time, PacketName, p.Op);
-    return PacketDisplayStr;
-}

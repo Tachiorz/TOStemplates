@@ -1,0 +1,9 @@
+// subOp = 0x2
+
+typedef struct
+{
+	BC_NORMAL_header header;
+	uint64 accountId;
+	uint unk1;
+	Position Pos;
+} BC_NORMAL_COMMANDER_MOVE_OK <optimize=false>;

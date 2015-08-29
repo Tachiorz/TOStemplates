@@ -7,6 +7,13 @@
 // Purpose:
 //--------------------------------------
 
+// Our custom packet header, made from pale log
+typedef struct 
+{
+    char Time[12];
+    ushort Length;
+    byte Type;
+} Frame <optimize=false>;
 
 // Length-prefixed string
 typedef struct

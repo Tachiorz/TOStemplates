@@ -1,0 +1,32 @@
+typedef struct 
+{
+    Frame header;
+    short Op;
+    uint idx;
+    uint crc;
+switch( GetPacketName(Op) ) 
+{
+    case "CB_LOGIN": CB_LOGIN packet; break;
+    case "CB_CURRENT_BARRACK": CB_CURRENT_BARRACK packet; break;
+    case "CB_COMMANDER_CREATE": CB_COMMANDER_CREATE packet; break;
+    case "CB_COMMANDER_DESTROY": CB_COMMANDER_DESTROY packet; break;
+    case "CB_COMMANDER_MOVE": CB_COMMANDER_MOVE packet; break;
+    case "CB_START_GAME": CB_START_GAME packet; break;
+    case "CB_BARRACKNAME_CHANGE": CB_BARRACKNAME_CHANGE packet; break;
+    case "CB_START_GAME": CB_START_GAME packet; break;
+    
+    case "CZ_CONNECT": CZ_CONNECT packet; break;
+
+    
+    default: byte UNKNOWN[Length-10] <optimize=false, fgcolor=0x666666>;
+}
+
+} ClientPacket <optimize=false, bgcolor=0xAAFFAA>;
+
+string DisplayClientPacket(ClientPacket &p)
+{
+    local string PacketDisplayStr;
+    PacketName = GetPacketName(p.Op);
+    SPrintf(PacketDisplayStr, "SEND@%s: %s (%d)", p.header.Time, PacketName, p.Op);
+    return PacketDisplayStr;
+}

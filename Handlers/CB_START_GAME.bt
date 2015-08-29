@@ -1,0 +1,5 @@
+typedef struct
+{
+	short routerId;
+	byte commanderListId;
+} CB_START_GAME <optimize=false>;

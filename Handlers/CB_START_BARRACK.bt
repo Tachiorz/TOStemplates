@@ -1,0 +1,4 @@
+typedef struct
+{
+	byte unkByte;
+} CB_START_BARRACK <optimize=false>;

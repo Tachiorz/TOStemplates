@@ -1,0 +1,20 @@
+// subOp = 0xB
+
+typedef struct {
+    uint16 zoneListId;
+    uint16 currentPlayersCount;
+} SingleZoneTraffic <optimize=false>;
+
+typedef struct {
+    uint16 mapId;
+    uint16 zoneServerCount;
+    SingleZoneTraffic SingleZoneTrafficList[zoneServerCount];
+}   SingleMapTraffic <optimize=false>;
+
+typedef struct
+{
+	BC_NORMAL_header header;
+	short zoneMaxPcCount;
+	short mapAvailableCount;
+	SingleMapTraffic SingleMapTrafficList[mapAvailableCount];
+} BC_NORMAL_ZONE_TRAFFIC <optimize=false>;
