@@ -1,6 +1,26 @@
 #include "Handlers\packet_common.bt"
 
 local uint BC_COMMANDER_LIST_CurPos;
+
+
+typedef struct
+{
+	short item_prop_size;
+	BC_COMMANDER_LIST_CurPos = FTell();
+	while (FTell()-BC_COMMANDER_LIST_CurPos < item_prop_size)
+	{
+		property itemprop;
+	}
+} BC_COMMANDER_LIST__ITEM <optimize=false>;
+
+typedef struct
+{
+	local int item;
+	CommanderCreateInfo character;
+	BC_COMMANDER_LIST__ITEM items[20];
+	short s;
+} BC_COMMANDER_LIST__COMMANDER <optimize=false>;
+
 typedef struct
 {
 	short size;
@@ -9,21 +29,11 @@ typedef struct
 	byte b1;
 	byte CharacterCount;
 	char TeamName[64];
-	lpString someString;
-    local int i;
-    local int item;
-	for (i = 0; i < CharacterCount; ++i)
+	uint16 accountPropSize;
+	BC_COMMANDER_LIST_CurPos = FTell();
+	while (FTell()-BC_COMMANDER_LIST_CurPos < accountPropSize)
 	{
-		CommanderCreateInfo character;
-		for (item = 0; item < 20; ++item)
-		{
-            short item_prop_size;
-            BC_COMMANDER_LIST_CurPos = FTell();
-		  	while (FTell()-BC_COMMANDER_LIST_CurPos < item_prop_size)
-		  	{
-		    	property itemprop;
-			}
-		}
-		short s;
+		property prop;
 	}
+	BC_COMMANDER_LIST__COMMANDER commander[CharacterCount];
 } BC_COMMANDER_LIST <optimize=false>;
