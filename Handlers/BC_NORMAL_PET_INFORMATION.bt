@@ -1,7 +1,8 @@
 // subOp = 0x8
 
+//TODO: Fix me, me wrong
 typedef struct
 {
 	NORMAL_header header;
-	uint petsCount;
+	uint petsCount; 
 } BC_NORMAL_PET_INFORMATION <optimize=false>;

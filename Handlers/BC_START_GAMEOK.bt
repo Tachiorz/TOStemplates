@@ -1,6 +1,6 @@
 typedef struct
 {
-	ushort zoneServerId;
+	int zoneServerId;
 	ubyte zoneServerIp[4];
 	int zoneServerPort;
 	int mapId;

@@ -24,9 +24,10 @@ switch( GetPacketName(Op) )
 		switch (NORMAL_SUBOP)
 		{
 			case 0x2: BC_NORMAL_COMMANDER_MOVE_OK packet; break;
-			case 0x4: BC_NORMAL_UNKNOWN_1 packet; break;
-			case 0x8: BC_NORMAL_PET_INFORMATION packet; break;
-			case 0xB: BC_NORMAL_ZONE_TRAFFIC packet; break;
+			//case 0x4: BC_NORMAL_UNKNOWN_1 packet; break;
+			//case 0x8: BC_NORMAL_PET_INFORMATION packet; break;
+			//case 0xB: BC_NORMAL_ZONE_TRAFFIC packet; break;
+			default: UNKNOWN_NORMAL packet;
 		}
 		break;
 
@@ -79,10 +80,11 @@ switch( GetPacketName(Op) )
 			case 0xE1: ZC_NORMAL_UNK7 packet; break;
 			case 0x54: ZC_NORMAL_UNK8 packet; break;
 			case 0x124: ZC_NORMAL_UNK9 packet; break;
+			default: UNKNOWN_NORMAL packet;
 		}
 		break;
 
-    default: byte UNKNOWN[Length-6] <optimize=false, fgcolor=0x666666>;
+    default: if (Length-6 > 0) byte UNKNOWN[Length-6] <optimize=false, fgcolor=0x666666>;
 }
 
 } ServerPacket <optimize=false, bgcolor=0xAAAAFF>;
@@ -91,6 +93,9 @@ string DisplayServerPacket(ServerPacket &p)
 {
     local string PacketDisplayStr;
     PacketName = GetPacketName(p.Op);
-    SPrintf(PacketDisplayStr, "RECV@%s: %s (%d)", p.header.Time, PacketName, p.Op);
+    if (PacketName == "ZC_NORMAL" || PacketName == "BC_NORMAL")
+    	SPrintf(PacketDisplayStr, "RECV@%s: %s (%d) (%d)", p.header.Time, PacketName, p.Op, p.packet.header.subOp);
+    else
+    	SPrintf(PacketDisplayStr, "RECV@%s: %s (%d)", p.header.Time, PacketName, p.Op);
     return PacketDisplayStr;
 }

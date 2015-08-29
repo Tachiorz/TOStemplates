@@ -4,4 +4,5 @@ typedef struct
 	
     uint32 pcId;
     uint16 numberEntries;
+    // ZLIB_DATA
 } ZC_SKILL_LIST <optimize=false>;

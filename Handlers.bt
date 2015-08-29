@@ -6,6 +6,7 @@
 #include "Handlers\CB_COMMANDER_DESTROY.bt"
 #include "Handlers\CB_COMMANDER_MOVE.bt"
 #include "Handlers\CB_START_GAME.bt"
+#include "Handlers\CB_START_BARRACK.bt"
 
 // Barrack -> Client
 #include "Handlers\BC_LOGINOK.bt"

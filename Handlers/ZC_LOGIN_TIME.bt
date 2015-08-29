@@ -1,4 +1,4 @@
 typedef struct
 {
-    uint64 now;
+    FILETIME now;
 } ZC_LOGIN_TIME <optimize=false>;

@@ -2,6 +2,7 @@ typedef struct
 {
 	byte charPosition;
 	char Name[65];
+	short Job;
 	short Gender;
 	Position Pos;
 	byte Hair;

@@ -47,10 +47,23 @@ string msgParameterRead(msgParameter &v)
 
 //TODO: generate switch for property types
 
+byte isStringProperty(int id)
+{
+    switch(id)
+    {
+        case 3972: return true;
+        case 4496: return true;
+        case 3975: return true;
+        case 3978: return true;
+
+    }
+    return false;
+}
+
 typedef struct 
 {
     short id;
-    if (id == 4496)
+    if (isStringProperty(id))
     {
         lpString val;
     }
@@ -63,7 +76,7 @@ string ShowProp(property &p)
 {
   local char ret[];
   local char val_type[];
-  if (p.id == 4496) 
+  if (isStringProperty(p.id)) 
      SPrintf( ret,"%d : %s ", p.id , p.val.text );
   else
      SPrintf( ret,"%d : %.0f" , p.id , p.val );

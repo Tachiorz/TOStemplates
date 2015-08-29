@@ -11,14 +11,21 @@ switch( GetPacketName(Op) )
     case "CB_COMMANDER_CREATE": CB_COMMANDER_CREATE packet; break;
     case "CB_COMMANDER_DESTROY": CB_COMMANDER_DESTROY packet; break;
     case "CB_COMMANDER_MOVE": CB_COMMANDER_MOVE packet; break;
+    case "CB_START_BARRACK": CB_START_BARRACK packet; break;
     case "CB_START_GAME": CB_START_GAME packet; break;
     case "CB_BARRACKNAME_CHANGE": CB_BARRACKNAME_CHANGE packet; break;
     case "CB_START_GAME": CB_START_GAME packet; break;
     
     case "CZ_CONNECT": CZ_CONNECT packet; break;
+    case "CZ_CAMPINFO": CZ_CAMPINFO packet; break;
+    case "CZ_CHAT": CZ_CHAT packet; break;
+    case "CZ_JUMP": CZ_JUMP packet; break;
+    case "CZ_KEYBOARD_MOVE": CZ_KEYBOARD_MOVE packet; break;
+    case "CZ_MOVE_STOP": CZ_MOVE_STOP packet; break;
+    case "CZ_SKILL_GROUND": CZ_SKILL_GROUND packet; break;
 
     
-    default: byte UNKNOWN[Length-10] <optimize=false, fgcolor=0x666666>;
+    default: if (Length-10 > 0) byte UNKNOWN[Length-10] <optimize=false, fgcolor=0x666666>;
 }
 
 } ClientPacket <optimize=false, bgcolor=0xAAFFAA>;

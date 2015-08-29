@@ -6,5 +6,5 @@ typedef struct
 	float f;
 	byte not_used;
 	char functionName[len];
-	char buffer[size-(len+14)];
+	if (size-(len+14) > 0) char buffer[size-(len+14)];
 } ZC_ADDON_MSG <optimize=false>;

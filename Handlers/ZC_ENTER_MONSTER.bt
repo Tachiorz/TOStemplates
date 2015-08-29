@@ -39,5 +39,5 @@ typedef struct
 	short str3Len;
 	char str3[str3Len];
 
-	char bin3[b3];
+	if (b3 > 0) char bin3[b3];
 } ZC_ENTER_MONSTER <optimize=false>;

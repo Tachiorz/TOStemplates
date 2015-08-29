@@ -14,7 +14,7 @@ typedef struct {
 typedef struct
 {
 	NORMAL_header header;
-	short zoneMaxPcCount;
-	short mapAvailableCount;
+	uint16 zoneMaxPcCount;
+	uint16 mapAvailableCount;
 	SingleMapTraffic SingleMapTrafficList[mapAvailableCount];
 } BC_NORMAL_ZONE_TRAFFIC <optimize=false>;

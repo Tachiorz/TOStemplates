@@ -2,7 +2,7 @@ typedef struct
 {
 	char Name[65];
 	char TeamName[64];
-	byte bin1[7];
+	char str[7];
 	uint64 accountId;
 	short Stance;
 	short s1;
@@ -56,3 +56,9 @@ typedef struct
 	short size;
 	int subOp;
 } NORMAL_header <optimize=false>;
+
+typedef struct
+{
+	NORMAL_header header;
+	byte UNKNOWN[header.size-12];
+} UNKNOWN_NORMAL <optimize=false>;
