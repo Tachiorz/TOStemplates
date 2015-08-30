@@ -68,6 +68,7 @@ switch( GetPacketName(Op) )
 	case "ZC_PLAY_ANI": ZC_PLAY_ANI packet; break;
 	case "ZC_SKILL_READY": ZC_SKILL_READY packet; break;
 	case "ZC_REST_SIT": ZC_REST_SIT packet; break;
+	case "ZC_SKILL_ADD": ZC_SKILL_ADD packet; break;
 	
 	case "ZC_NORMAL":
 		NORMAL_CurrentPos = FTell();

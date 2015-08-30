@@ -69,6 +69,7 @@
 #include "Handlers\ZC_PLAY_ANI.bt"
 #include "Handlers\ZC_SKILL_READY.bt"
 #include "Handlers\ZC_REST_SIT.bt"
+#include "Handlers\ZC_SKILL_ADD.bt"
 // ZC_NORMAL
 #include "Handlers\ZC_NORMAL_UNK6.bt"
 #include "Handlers\ZC_NORMAL_UNK7.bt"

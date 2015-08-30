@@ -1,0 +1,18 @@
+local uint ZC_SKILL_ADD_CurPos;
+typedef struct
+{
+	short size;
+    uint64 unk1;
+    uint64 unk2;
+    uint16 unk3;
+    uint32 skillId;
+    uint16 propSize;
+    uint16 unk4;
+    uint32 unk5;
+    uint32 unk6;
+	ZC_SKILL_ADD_CurPos = FTell();
+	while (FTell()-ZC_SKILL_ADD_CurPos < propSize)
+	{
+		property skillprop;
+	}
+} ZC_SKILL_ADD <optimize=false>;
