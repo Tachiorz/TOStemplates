@@ -1,17 +1,24 @@
-local uint ZC_SKILL_ADD_CurPos;
 typedef struct
 {
-	short size;
-    uint64 unk1;
-    uint64 unk2;
-    uint16 unk3;
+    uint64 guid; // ?
     uint32 skillId;
     uint16 propSize;
     uint16 unk4;
     uint32 unk5;
     uint32 unk6;
+} SKILL <optimize=false>;
+
+local uint ZC_SKILL_ADD_CurPos;
+typedef struct
+{
+	short size;
+
+	byte REGISTER_QUICK_SKILL;
+	byte SKILL_LIST_GET;
+    uint64 guid; // ?
+    SKILL skill;
 	ZC_SKILL_ADD_CurPos = FTell();
-	while (FTell()-ZC_SKILL_ADD_CurPos < propSize)
+	while (FTell()-ZC_SKILL_ADD_CurPos < skill.propSize)
 	{
 		property skillprop;
 	}
