@@ -1,6 +1,7 @@
 typedef struct
 {
-    uint16 unk1;
+    uint16 size;
+    
     uint64 socialInfoId;
     uint32 unk4;
 } ZC_COOLDOWN_LIST <optimize=false>;

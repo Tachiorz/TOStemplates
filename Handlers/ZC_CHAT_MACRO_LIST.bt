@@ -1,5 +1,6 @@
 typedef struct
 {
-    uint16 unk1;
+    uint16 size;
+    
     uint32 unk2;
 } ZC_CHAT_MACRO_LIST <optimize=false>;

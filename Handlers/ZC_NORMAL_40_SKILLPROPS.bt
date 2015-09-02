@@ -1,0 +1,14 @@
+local uint ZC_NORMAL_40_SKILLPROPS_CurPos;
+typedef struct
+{
+	NORMAL_header header;
+    byte unk;
+    uint32 skillId;
+    uint16 propSize;
+	ZC_NORMAL_40_SKILLPROPS_CurPos = FTell();
+	while (FTell()-ZC_NORMAL_40_SKILLPROPS_CurPos < propSize)
+	{
+		property skillprop;
+        Printf( "%d : %.0f\n" , skillprop.id , skillprop.val );
+	}
+} ZC_NORMAL_40_SKILLPROPS <optimize=false>;

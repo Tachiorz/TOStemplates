@@ -1,0 +1,5 @@
+typedef struct
+{
+  short size;
+  
+} ZC_SESSION_OBJ_ADD <optimize=false>;

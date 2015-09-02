@@ -1,5 +1,6 @@
 typedef struct
 {
-    uint16 unk1;
+    uint16 size;
+    
     byte unk2;
 } ZC_OPTION_LIST <optimize=false>;

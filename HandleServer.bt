@@ -69,6 +69,7 @@ switch( GetPacketName(Op) )
 	case "ZC_SKILL_READY": ZC_SKILL_READY packet; break;
 	case "ZC_REST_SIT": ZC_REST_SIT packet; break;
 	case "ZC_SKILL_ADD": ZC_SKILL_ADD packet; break;
+	case "ZC_SESSION_OBJ_ADD": ZC_SESSION_OBJ_ADD packet; break;
 	
 	case "ZC_NORMAL":
 		NORMAL_CurrentPos = FTell();
@@ -77,6 +78,7 @@ switch( GetPacketName(Op) )
 		FSeek(NORMAL_CurrentPos);
 		switch (NORMAL_SUBOP)
 		{
+			case 0x28: ZC_NORMAL_40_SKILLPROPS packet; break;
 			case 0xC9: ZC_NORMAL_UNK6 packet; break;
 			case 0xE1: ZC_NORMAL_UNK7 packet; break;
 			case 0x54: ZC_NORMAL_UNK8 packet; break;

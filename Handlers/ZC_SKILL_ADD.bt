@@ -1,6 +1,6 @@
 typedef struct
 {
-    uint64 guid; // ?
+    uint64 skillObjectId;
     uint32 skillId;
     uint16 propSize;
     uint16 unk4;

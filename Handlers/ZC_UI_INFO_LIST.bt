@@ -1,6 +1,7 @@
 typedef struct
 {
-    uint16 unk1;
+    uint16 size;
+    
     uint32 unk2;
     uint32 unk3;
 } ZC_UI_INFO_LIST <optimize=false>;
