@@ -1,0 +1,6 @@
+typedef struct
+{
+    uint64 characterId;
+    int cooldownId;
+    int i4;
+} ZC_COOLDOWN_CHANGED <optimize=false>;

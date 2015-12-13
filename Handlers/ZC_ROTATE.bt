@@ -1,0 +1,7 @@
+typedef struct
+{
+    int handle;
+    Vector Dir;
+    byte b1;
+    byte b2;
+} ZC_ROTATE <optimize=false>;

@@ -82,6 +82,8 @@
 #include "Handlers\ZC_FACTION.bt"
 #include "Handlers\ZC_SET_NPC_STATE.bt"
 #include "Handlers\ZC_ACHIEVE_POINT.bt"
+#include "Handlers\ZC_ROTATE.bt"
+#include "Handlers\ZC_COOLDOWN_CHANGED.bt"
 
 // ZC_NORMAL
 #include "Handlers\ZC_NORMAL_40_SKILLPROPS.bt"

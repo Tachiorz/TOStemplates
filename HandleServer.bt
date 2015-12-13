@@ -78,6 +78,8 @@ switch( GetPacketName(Op) )
     case "ZC_FACTION": ZC_FACTION packet; break;
     case "ZC_SET_NPC_STATE": ZC_SET_NPC_STATE packet; break;
     case "ZC_ACHIEVE_POINT": ZC_ACHIEVE_POINT packet; break;
+    case "ZC_ROTATE": ZC_ROTATE packet; break;
+    case "ZC_COOLDOWN_CHANGED": ZC_COOLDOWN_CHANGED packet; break;
     
     case "ZC_NORMAL":
         NORMAL_CurrentPos = FTell();
