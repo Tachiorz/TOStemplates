@@ -84,8 +84,15 @@
 #include "Handlers\ZC_ACHIEVE_POINT.bt"
 #include "Handlers\ZC_ROTATE.bt"
 #include "Handlers\ZC_COOLDOWN_CHANGED.bt"
+#include "Handlers\ZC_QUICK_ROTATE.bt"
+#include "Handlers\ZC_MSPD.bt"
+#include "Handlers\ZC_SHOW_EMOTICON.bt"
+#include "Handlers\ZC_CREATE_SCROLLLOCKBOX.bt"
+#include "Handlers\ZC_MOVE_STOP.bt"
 
 // ZC_NORMAL
+#include "Handlers\ZC_NORMAL_28.bt"
+#include "Handlers\ZC_NORMAL_44.bt"
 #include "Handlers\ZC_NORMAL_40_SKILLPROPS.bt"
 #include "Handlers\ZC_NORMAL_81.bt"
 #include "Handlers\ZC_NORMAL_84.bt"

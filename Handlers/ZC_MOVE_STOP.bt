@@ -1,0 +1,6 @@
+typedef struct
+{
+    uint32 handle;
+    Position position;
+    byte unk1;
+} ZC_MOVE_STOP <optimize=false>;

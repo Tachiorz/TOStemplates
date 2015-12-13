@@ -1,0 +1,13 @@
+typedef struct
+{
+    NORMAL_header header;
+    int charHandle;
+    byte b;
+    int time;
+    int targetHandle;
+    Position pos;
+    Vector dir;
+    int i7;
+    int i8;
+    int i9;
+} ZC_NORMAL_28 <optimize=false>;

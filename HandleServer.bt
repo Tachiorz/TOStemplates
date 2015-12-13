@@ -80,6 +80,11 @@ switch( GetPacketName(Op) )
     case "ZC_ACHIEVE_POINT": ZC_ACHIEVE_POINT packet; break;
     case "ZC_ROTATE": ZC_ROTATE packet; break;
     case "ZC_COOLDOWN_CHANGED": ZC_COOLDOWN_CHANGED packet; break;
+    case "ZC_QUICK_ROTATE": ZC_QUICK_ROTATE packet; break;
+    case "ZC_MSPD": ZC_MSPD packet; break;
+    case "ZC_SHOW_EMOTICON": ZC_SHOW_EMOTICON packet; break;
+    case "ZC_CREATE_SCROLLLOCKBOX": ZC_CREATE_SCROLLLOCKBOX packet; break;
+    case "ZC_MOVE_STOP": ZC_MOVE_STOP packet; break;
     
     case "ZC_NORMAL":
         NORMAL_CurrentPos = FTell();
@@ -88,7 +93,9 @@ switch( GetPacketName(Op) )
         FSeek(NORMAL_CurrentPos);
         switch (NORMAL_SUBOP)
         {
+        	case 28: ZC_NORMAL_28 packet; break;
             case 40: ZC_NORMAL_40_SKILLPROPS packet; break;
+            case 44: ZC_NORMAL_44 packet; break;
             case 81: ZC_NORMAL_81 packet; break;
             case 84: ZC_NORMAL_84 packet; break;
             case 142: ZC_NORMAL_142 packet; break;

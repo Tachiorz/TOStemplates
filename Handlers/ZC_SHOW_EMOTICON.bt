@@ -1,0 +1,6 @@
+typedef struct
+{
+    int handle;
+    int emoticons;
+    int duration;
+} ZC_SHOW_EMOTICON <optimize=false>;

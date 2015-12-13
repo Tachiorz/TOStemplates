@@ -1,0 +1,11 @@
+typedef struct
+{
+    int handle;
+    float f1;
+    float f2;
+    float f3;
+    float f4;
+    float f5;
+    float f6;
+    float f7;
+} ZC_CREATE_SCROLLLOCKBOX <optimize=false>;

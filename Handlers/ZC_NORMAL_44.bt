@@ -1,0 +1,5 @@
+typedef struct
+{
+    NORMAL_header header;
+    int handle;
+} ZC_NORMAL_44 <optimize=false>;

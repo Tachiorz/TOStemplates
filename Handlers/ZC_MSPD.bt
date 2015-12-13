@@ -1,0 +1,5 @@
+typedef struct
+{
+    int handle;
+    float speed;
+} ZC_MSPD <optimize=false>;
