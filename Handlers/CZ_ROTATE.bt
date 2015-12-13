@@ -1,0 +1,4 @@
+typedef struct
+{
+    Vector Dir;
+} CZ_ROTATE <optimize=false>; 

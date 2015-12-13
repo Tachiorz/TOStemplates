@@ -32,6 +32,8 @@
 #include "Handlers\CZ_KEYBOARD_MOVE.bt"
 #include "Handlers\CZ_JUMP.bt"
 #include "Handlers\CZ_QUEST_NPC_STATE_CHECK.bt"
+#include "Handlers\CZ_SKILL_TARGET_ANI.bt"
+#include "Handlers\CZ_ROTATE.bt"
 
 // Zone -> Client
 #include "Handlers\ZC_OBJECT_PROPERTY.bt"

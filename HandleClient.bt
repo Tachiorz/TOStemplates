@@ -24,6 +24,8 @@ switch( GetPacketName(Op) )
     case "CZ_MOVE_STOP": CZ_MOVE_STOP packet; break;
     case "CZ_SKILL_GROUND": CZ_SKILL_GROUND packet; break;
     case "CZ_QUEST_NPC_STATE_CHECK": CZ_QUEST_NPC_STATE_CHECK packet; break;
+    case "CZ_SKILL_TARGET_ANI": CZ_SKILL_TARGET_ANI packet; break;
+    case "CZ_ROTATE": CZ_ROTATE packet; break;
 
     
     default: if (Length-10 > 0) byte UNKNOWN[Length-10] <optimize=false, fgcolor=0x666666>;

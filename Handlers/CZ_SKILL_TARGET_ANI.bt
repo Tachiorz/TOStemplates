@@ -1,0 +1,6 @@
+typedef struct
+{
+    byte unk;
+    int type; //?
+    Vector Dir;
+} CZ_SKILL_TARGET_ANI <optimize=false>; 
