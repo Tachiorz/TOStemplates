@@ -49,18 +49,11 @@ string msgParameterRead(msgParameter &v)
 
 byte isStringProperty(int id)
 {
-    switch(id)
-    {
-        case 3972: return true;
-        case 4496: return true;
-        case 3975: return true;
-        case 3978: return true;
-        case 7276: return true;
-        case 7494: return true;
-        case 7473: return true;
-    }
     switch(GetPropertyName(id))
     {
+        case "Maker": return true;
+        case "BuffCaster": return true;
+        case "BuffEndTime": return true;
         case "QSTARTZONETYPE": return true;
     }
     return false;
