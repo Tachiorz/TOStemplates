@@ -1,9 +1,9 @@
 typedef struct
 {
-	NORMAL_header header;
+    NORMAL_header header;
     uint32 pcId;
     byte unk1;
     uint32 unk2;
     uint32 unk3;
     uint32 unk4;
-} ZC_NORMAL_UNK9 <optimize=false>;
+} ZC_NORMAL_292 <optimize=false>;

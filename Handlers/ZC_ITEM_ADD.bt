@@ -1,0 +1,19 @@
+local uint ITEM_ADD_CurPos;
+typedef struct
+{
+    short size;
+    uint64 worldId;
+    int amount;
+    int index;
+    int id;
+    uint16 propSize;
+    byte addType;
+    float notificationDelay;
+    byte invType;
+    short s;
+    ITEM_ADD_CurPos = FTell();
+    while (FTell()-ITEM_ADD_CurPos < propSize)
+    {
+        property prop;
+    }
+} ZC_ITEM_ADD <optimize=false>;

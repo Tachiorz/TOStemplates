@@ -1,35 +1,39 @@
 typedef struct
 {
-	char Name[65];
-	char TeamName[64];
-	char str[7];
-	uint64 accountId;
-	short Stance;
-	short s1;
-	short Job;
-	byte Gender;
-	byte b1;
-	int Level;
-	int Items[20];
-	uint16 Hair;
-	uint16 Pose;
+    char Name[65];
+    char TeamName[64];
+    char str[7];
+    uint64 accountId;
+    short Stance;
+    short s1;
+    short Job;
+    byte Gender;
+    byte b1;
+    int Level;
+    int Items[20];
+    int i6; //icbt2
+    int i7; //icbt2
+    uint16 Hair;
+    uint16 Pose;
 } Commander <optimize=false>;
 
 typedef struct
 {
-	Commander commander;
-	uint64 socialInfoId;
-	uint16 index;
-	uint16 mapId;
-	int d3;
-	int d4;
-	int maxXP;
-	int d6;
-	Position position1; 
-	Vector vector1;
-	Position position2; 
-	Vector vector2;
-	int d7;
+    Commander commander;
+    uint64 socialInfoId;
+    uint16 index;
+    uint16 mapId;
+    float d3;
+    int d4;
+    int maxXP;
+    int d6;
+    Position position1; 
+    Vector vector1;
+    Position position2; 
+    Vector vector2;
+    int d7;
+
+    //short d8; //obt
 } CommanderCreateInfo <optimize=false>;
 
 typedef struct
@@ -53,12 +57,12 @@ typedef struct
 
 typedef struct
 {
-	short size;
-	int subOp;
+    short size;
+    int subOp;
 } NORMAL_header <optimize=false>;
 
 typedef struct
 {
-	NORMAL_header header;
-	byte UNKNOWN[header.size-12];
+    NORMAL_header header;
+    byte UNKNOWN[header.size-12];
 } UNKNOWN_NORMAL <optimize=false>;

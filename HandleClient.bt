@@ -2,8 +2,8 @@ typedef struct
 {
     Frame header;
     short Op;
-    uint idx;
-    uint crc;
+    int idx;
+    int crc;
 switch( GetPacketName(Op) ) 
 {
     case "CB_LOGIN": CB_LOGIN packet; break;
@@ -23,6 +23,7 @@ switch( GetPacketName(Op) )
     case "CZ_KEYBOARD_MOVE": CZ_KEYBOARD_MOVE packet; break;
     case "CZ_MOVE_STOP": CZ_MOVE_STOP packet; break;
     case "CZ_SKILL_GROUND": CZ_SKILL_GROUND packet; break;
+    case "CZ_QUEST_NPC_STATE_CHECK": CZ_QUEST_NPC_STATE_CHECK packet; break;
 
     
     default: if (Length-10 > 0) byte UNKNOWN[Length-10] <optimize=false, fgcolor=0x666666>;

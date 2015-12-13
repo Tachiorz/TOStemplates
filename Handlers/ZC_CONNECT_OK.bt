@@ -7,8 +7,8 @@ typedef struct
     byte accountPrivileges;
     uint16 unk2;
     uint64 unk3;
-    byte markers[3];
-    byte passport[41];
+    lpString passport;
+    short s;
     uint32 pcId;
     uint32 unk5;
     CommanderInfo commander;

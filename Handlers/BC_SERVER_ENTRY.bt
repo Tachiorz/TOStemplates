@@ -1,7 +1,7 @@
 typedef struct
 {
-	ubyte ipClientNet[4];
-	ubyte ipVirtualClientNet[4];
-	short channelPort1;
-	short channelPort2;
+    ubyte ipClientNet[4];
+    ubyte ipVirtualClientNet[4];
+    short channelPort1;
+    short channelPort2;
 } BC_SERVER_ENTRY <optimize=false>;

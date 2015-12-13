@@ -20,7 +20,7 @@ typedef struct
 {
     short length;
     if(length > 0)
-      char text[length];
+        char text[length];
 }
 lpString <read=lpStringRead>;
 
@@ -55,7 +55,13 @@ byte isStringProperty(int id)
         case 4496: return true;
         case 3975: return true;
         case 3978: return true;
-
+        case 7276: return true;
+        case 7494: return true;
+        case 7473: return true;
+    }
+    switch(GetPropertyName(id))
+    {
+        case "QSTARTZONETYPE": return true;
     }
     return false;
 }
@@ -74,39 +80,39 @@ typedef struct
 
 string ShowProp(property &p)
 {
-  local char ret[];
-  local char val_type[];
-  local string name = GetPropertyName(p.id);
-  if (isStringProperty(p.id)) 
-     SPrintf( ret,"%s(%d): %s ", name, p.id , p.val.text );
-  else
-     SPrintf( ret,"%s(%d): %.0f" , name, p.id , p.val );
-  return( ret );
+    char ret[];
+    local char val_type[];
+    local string name = GetPropertyName(p.id);
+    if (isStringProperty(p.id)) 
+        SPrintf( ret,"%s(%d): %s ", name, p.id , p.val.text );
+    else
+        SPrintf( ret,"%s(%d): %.0f" , name, p.id , p.val );
+    return( ret );
 }
 
 typedef struct
 {
-  float X;
-  float Y;
-  float Z;
+    float X;
+    float Y;
+    float Z;
 } Position <read=ShowPosition, optimize=false>;
 
 string ShowPosition(Position &p)
 {
-  local char ret[];
-  SPrintf( ret,"X %.3f : Y %.3f : Z %.3f", p.X, p.Y, p.Z );
-  return( ret );
+    local char ret[];
+    SPrintf( ret,"X %.3f : Y %.3f : Z %.3f", p.X, p.Y, p.Z );
+    return( ret );
 }
 
 typedef struct
 {
-  float X;
-  float Y;
+    float X;
+    float Y;
 } Vector <read=ShowVector, optimize=false>;
 
 string ShowVector(Vector &p)
 {
-  local char ret[];
-  SPrintf( ret,"X %.3f : Y %.3f", p.X, p.Y);
-  return( ret );
+    local char ret[];
+    SPrintf( ret,"X %.3f : Y %.3f", p.X, p.Y);
+    return( ret );
 }

@@ -1,0 +1,5 @@
+typedef struct
+{
+    int handle;
+    int faction;
+} ZC_FACTION <optimize=false>;

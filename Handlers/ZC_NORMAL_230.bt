@@ -1,0 +1,11 @@
+typedef struct
+{
+    NORMAL_header header;
+    uint64 characterId;
+    int i1;
+    int i2;
+    short Job;
+    int i3;
+    short s;
+    FILETIME time;
+} ZC_NORMAL_230 <optimize=false>;

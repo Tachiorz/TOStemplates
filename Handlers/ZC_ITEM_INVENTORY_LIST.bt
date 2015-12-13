@@ -1,0 +1,25 @@
+local uint INVENTORY_ITEM_CurPos;
+typedef struct
+{
+    uint32 Id;
+    uint16 propSize;
+    uint16 s;
+    uint64 worldId;
+    uint32 amount;
+    uint32 price;
+    uint32 key;
+    INVENTORY_ITEM_CurPos = FTell();
+    while (FTell()-INVENTORY_ITEM_CurPos < propSize)
+    {
+        property prop;
+    }
+} INVENTORY_ITEM <optimize=false>;
+
+typedef struct
+{
+    uint16 size;
+    
+    uint32 itemCount;
+    uint16 compression;
+    INVENTORY_ITEM items[itemCount];
+} ZC_ITEM_INVENTORY_LIST <optimize=false>;

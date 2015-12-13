@@ -1,0 +1,7 @@
+typedef struct
+{
+    int mapId;
+    int i;
+    short s1;
+    short s2;
+} ZC_SET_NPC_STATE <optimize=false>;

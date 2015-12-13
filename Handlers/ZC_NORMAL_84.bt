@@ -1,6 +1,6 @@
 typedef struct
 {
-	NORMAL_header header;
+    NORMAL_header header;
     uint32 pcId;
     uint32 unk1;
     uint32 skillId;
@@ -11,4 +11,4 @@ typedef struct
     uint32 unk3;
     float f2;
     byte gap[33];
-} ZC_NORMAL_UNK8 <optimize=false>;
+} ZC_NORMAL_84 <optimize=false>;

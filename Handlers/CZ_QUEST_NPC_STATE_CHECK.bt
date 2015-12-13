@@ -1,0 +1,3 @@
+typedef struct {
+    int mapId;
+} CZ_QUEST_NPC_STATE_CHECK <optimize=false>; 

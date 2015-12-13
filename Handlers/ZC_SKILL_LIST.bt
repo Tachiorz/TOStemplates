@@ -1,7 +1,7 @@
 typedef struct
 {
-	uint16 size;
-	
+    uint16 size;
+    
     uint32 pcId;
     uint16 numberEntries;
     // ZLIB_DATA

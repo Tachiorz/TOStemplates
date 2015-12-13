@@ -9,12 +9,12 @@
 
 typedef struct
 {
-	short size;
+    short size;
 
-	int clientMessage;
-	byte paramCount;
-	byte type; // 0 = also show in red letters on screen, 1 = don't
+    int clientMessage;
+    byte paramCount;
+    byte type; // 0 = also show in red letters on screen, 1 = don't
 
-	if(paramCount != 0)
-	    msgParameter parameters[paramCount] <optimize=false>;
+    if(paramCount != 0)
+        msgParameter parameters[paramCount] <optimize=false>;
 } ZC_SYSTEM_MSG <optimize=false>;

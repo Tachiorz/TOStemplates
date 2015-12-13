@@ -1,4 +1,4 @@
 typedef struct
 {
-	byte index;
+    byte index;
 } BC_COMMANDER_DESTROY <optimize=false>;

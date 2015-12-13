@@ -1,10 +1,10 @@
 typedef struct
 {
-	short size;
+    short size;
 
-	byte len;
-	float f;
-	byte not_used;
-	char functionName[len];
-	if (size-(len+14) > 0) char buffer[size-(len+14)];
+    byte len;
+    float f;
+    byte not_used;
+    char functionName[len];
+    if (size-(len+14) > 0) char buffer[size-(len+14)];
 } ZC_ADDON_MSG <optimize=false>;

@@ -1,11 +1,11 @@
 typedef struct
 {
-	int zoneServerId;
-	ubyte zoneServerIp[4];
-	int zoneServerPort;
-	int mapId;
-	byte commanderListId;
-	uint64 socialInfoId;
-	byte isSingleMap;
-	byte unk1;
+    int zoneServerId;
+    ubyte zoneServerIp[4];
+    int zoneServerPort;
+    int mapId;
+    byte commanderListId;
+    uint64 socialInfoId;
+    byte isSingleMap;
+    byte unk1;
 } BC_START_GAMEOK <optimize=false>;

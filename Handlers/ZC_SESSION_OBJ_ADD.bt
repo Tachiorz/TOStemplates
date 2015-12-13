@@ -1,5 +1,10 @@
 typedef struct
 {
-  short size;
-  
+    short size;
+    int id;
+    int i1;
+    uint64 worldId;
+    int i2;
+    int i3;
+    int i4;
 } ZC_SESSION_OBJ_ADD <optimize=false>;

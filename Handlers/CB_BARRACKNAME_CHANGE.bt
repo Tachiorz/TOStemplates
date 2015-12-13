@@ -1,4 +1,4 @@
 typedef struct
 {
-	char Name[64];
+    char Name[64];
 } CB_BARRACKNAME_CHANGE <optimize=false>;

@@ -1,43 +1,53 @@
+local uint ENTER_MONSTER_CurPos;
 typedef struct
 {
-	short size;
+    short size;
 
-	int handle;
-	float x,y,z;
-	float dx, dy;
-	MonsterType type;
-	byte b1; // bool?
-	int hp, maxHp;
-	short s1;
-	float i1;
+    int handle;
+    float x,y,z;
+    float dx, dy;
+    MonsterType type;
+    byte b1; // bool?
+    int hp, maxHp;
+    short s1;
+    float i1;
 
-	// MONSTER
-	int monsterId;
-	int i2;
-	int maxhp;
-	//short s2; // max shield?
-	//char bin1[2];
-	float f0;
-	int level;
-	float sdr;
-	byte b2;
-	char bin2[3];
+    // MONSTER
+    int monsterId;
+    int i2;
+    int maxhp;
+    //short s2; // max shield?
+    //char bin1[2];
+    float f0;
+    int level;
+    float sdr;
+    byte b2;
+    char bin2[3];
 
-	int GenType;
-	int i5;
-	byte b3;
-	byte b4;
+    int GenType;
+    int i5;
+    byte propSize;
+    byte b4;
 
-	short nameLen;
-	char name[nameLen];
-	short unameLen;
-	char uname[unameLen];
-	short str1Len;
-	char str1[str1Len];
-	short str2Len;
-	char str2[str2Len];
-	short str3Len;
-	char str3[str3Len];
-
-	if (b3 > 0) char bin3[b3];
+    short nameLen;
+    char name[nameLen];
+    short unameLen;
+    char uname[unameLen];
+    short str1Len;
+    char str1[str1Len];
+    short str2Len;
+    char str2[str2Len];
+    short str3Len;
+    char str3[str3Len];
+//1600 210.3119 -827.7175
+    if (x > 1500 && x < 1700)
+    if (y > 100 && y < 300)
+    if (z > -900.0 && z < -700.0)
+    if (type == 2)
+    Printf("%d; %d; %03f; %03f; %03f; %s\n", FTell(), monsterId, x, y, z, str1);
+    ENTER_MONSTER_CurPos = FTell();
+    while (FTell()-ENTER_MONSTER_CurPos < propSize)
+    {
+        property prop;
+    }
 } ZC_ENTER_MONSTER <optimize=false>;

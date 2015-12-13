@@ -1,6 +1,6 @@
 typedef struct
 {
-	byte success;
-	int result;
-	char barrackName[64];
+    byte success;
+    int result;
+    char barrackName[64];
 } BC_BARRACKNAME_CHANGE <optimize=false>;

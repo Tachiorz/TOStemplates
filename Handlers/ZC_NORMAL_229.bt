@@ -1,0 +1,13 @@
+typedef struct
+{
+    lpString name;
+    int id;
+} ITEM_229 <optimize=false>;
+
+
+typedef struct
+{
+    NORMAL_header header;
+    int count;
+    ITEM_229 items[count];
+} ZC_NORMAL_229 <optimize=false>;

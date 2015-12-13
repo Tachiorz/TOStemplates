@@ -2,8 +2,8 @@
 
 typedef struct
 {
-	NORMAL_header header;
-	uint64 accountId;
-	byte unk1;
-	uint64 unk2;
+    NORMAL_header header;
+    uint64 accountId;
+    byte unk1;
+    uint64 unk2;
 } BC_NORMAL_UNKNOWN_1 <optimize=false>;

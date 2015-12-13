@@ -1,7 +1,7 @@
 typedef struct
 {
-	uint64 accountId;
-	byte unk;
-	Position Pos;
-	Vector Dir;
+    uint64 accountId;
+    byte unk;
+    Position Pos;
+    Vector Dir;
 } CB_CURRENT_BARRACK <optimize=false>;

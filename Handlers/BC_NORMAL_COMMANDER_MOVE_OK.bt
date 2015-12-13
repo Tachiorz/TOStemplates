@@ -2,8 +2,8 @@
 
 typedef struct
 {
-	NORMAL_header header;
-	uint64 accountId;
-	byte unk1;
-	Position Pos;
+    NORMAL_header header;
+    uint64 accountId;
+    byte unk1;
+    Position Pos;
 } BC_NORMAL_COMMANDER_MOVE_OK <optimize=false>;

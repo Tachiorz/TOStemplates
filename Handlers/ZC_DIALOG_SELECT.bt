@@ -9,9 +9,9 @@
 
 typedef struct
 {
-	short size;
+    short size;
 
-	int handle;
-	short Unk;
-	lpString strings[4] <optimize=false>;
+    int handle;
+    short Unk;
+    lpString strings[4] <optimize=false>;
 } ZC_DIALOG_SELECT <optimize=false>;

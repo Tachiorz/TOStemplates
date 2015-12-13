@@ -1,8 +1,8 @@
 typedef struct
 {
-	ushort s1;
-	uint64 SessionId;
-	char Name[33];
-	int accountPrivileges;
-	char sessionKey[64];
+    ushort s1;
+    uint64 SessionId;
+    char Name[33];
+    int accountPrivileges;
+    char sessionKey[64];
 } BC_LOGINOK <optimize=false>;

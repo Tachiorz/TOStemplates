@@ -1,0 +1,6 @@
+typedef struct
+{
+    NORMAL_header header;
+    byte b;
+    uint64 L[14];
+} ZC_NORMAL_210 <optimize=false>;

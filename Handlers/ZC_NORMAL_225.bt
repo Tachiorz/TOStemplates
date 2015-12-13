@@ -1,6 +1,6 @@
 typedef struct
 {
-	NORMAL_header header;
+    NORMAL_header header;
     uint32 unk1;
     uint32 socialId;
     byte unk2;
@@ -12,4 +12,4 @@ typedef struct
     char familyName_2 [64];
     char commanderName [64];
     byte unk4[48];
-} ZC_NORMAL_UNK7 <optimize=false>;
+} ZC_NORMAL_225 <optimize=false>;

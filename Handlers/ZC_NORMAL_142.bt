@@ -1,0 +1,5 @@
+typedef struct
+{
+    NORMAL_header header;
+    int monsterHandle;
+} ZC_NORMAL_142 <optimize=false>;

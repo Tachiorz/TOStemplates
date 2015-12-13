@@ -1,0 +1,9 @@
+typedef struct
+{
+    NORMAL_header header;
+    short compressed;
+    uint64 characterId;
+    int i;
+    short s;
+    byte b;
+} ZC_NORMAL_291 <optimize=false>;

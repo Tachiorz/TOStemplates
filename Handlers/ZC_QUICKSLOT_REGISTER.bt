@@ -1,0 +1,6 @@
+typedef struct
+{
+    char name[32];
+    int id;
+    int slotId;
+} ZC_QUICKSLOT_REGISTER <optimize=false>;

@@ -1,6 +1,6 @@
 typedef struct
 {
-	short size;
+    short size;
 
     uint32 pcId;
     byte familyName [64];

@@ -1,0 +1,6 @@
+typedef struct
+{
+    NORMAL_header header;
+    uint64 characterId;
+    int i1;
+} ZC_NORMAL_202 <optimize=false>;

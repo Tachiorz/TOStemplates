@@ -1,5 +1,5 @@
 typedef struct
 {
+    uint16 size;
     uint32 unk1;
-    uint16 unk2;
 } ZC_QUICK_SLOT_LIST <optimize=false>;

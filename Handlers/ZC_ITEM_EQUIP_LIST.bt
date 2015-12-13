@@ -1,0 +1,22 @@
+local uint ZC_ITEM_EQUIP_LIST_CurPos;
+
+typedef struct
+{
+    int id;
+    short item_prop_size;
+    short unk;
+    uint64 worldId;
+    int key;
+    int i1;
+    ZC_ITEM_EQUIP_LIST_CurPos = FTell();
+    while (FTell()-ZC_ITEM_EQUIP_LIST_CurPos < item_prop_size)
+    {
+        property itemprop;
+    }
+} EQUIP_ITEM <optimize=false>;
+
+typedef struct
+{
+    short size;
+    EQUIP_ITEM items[20];
+} ZC_ITEM_EQUIP_LIST <optimize=false>;

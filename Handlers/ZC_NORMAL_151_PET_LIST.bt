@@ -1,0 +1,28 @@
+
+local uint PET_LIST_ITEM_CurPos;
+typedef struct
+{
+    int i1;
+    uint64 petId;
+    int i2;
+    short s1;
+    float f1;
+    short s2;
+    lpString name;
+    int i3;
+    uint16 petPropSize;
+    PET_LIST_ITEM_CurPos = FTell();
+    while (FTell()-PET_LIST_ITEM_CurPos < petPropSize)
+    {
+        property prop;
+    }
+    int i4;
+} PET_LIST_ITEM <optimize=false>;
+
+typedef struct
+{
+    NORMAL_header header;
+    byte b;
+    int count;
+    PET_LIST_ITEM pets[count];
+} ZC_NORMAL_151_PET_LIST <optimize=false>;

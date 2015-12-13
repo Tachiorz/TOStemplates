@@ -1,0 +1,6 @@
+typedef struct
+{
+    NORMAL_header header;
+    int monsterHandle;
+    Position pos; 
+} ZC_NORMAL_81 <optimize=false>;

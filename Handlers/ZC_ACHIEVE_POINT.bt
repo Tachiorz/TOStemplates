@@ -1,0 +1,7 @@
+typedef struct
+{
+    short id;
+    short s;
+    int i1;
+    int i2;
+} ZC_ACHIEVE_POINT <optimize=false>;
