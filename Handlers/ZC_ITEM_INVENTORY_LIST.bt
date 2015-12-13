@@ -8,6 +8,7 @@ typedef struct
     uint32 amount;
     uint32 price;
     uint32 key;
+    uint32 i;
     INVENTORY_ITEM_CurPos = FTell();
     while (FTell()-INVENTORY_ITEM_CurPos < propSize)
     {

@@ -52,9 +52,11 @@ byte isStringProperty(int id)
     switch(GetPropertyName(id))
     {
         case "Maker": return true;
+        case "CustomName": return true;
         case "BuffCaster": return true;
         case "BuffEndTime": return true;
         case "QSTARTZONETYPE": return true;
+        case "LastUIOpenPos": return true;
     }
     return false;
 }
