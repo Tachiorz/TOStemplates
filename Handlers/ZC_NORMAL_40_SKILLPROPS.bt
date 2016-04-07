@@ -9,6 +9,5 @@ typedef struct
     while (FTell()-ZC_NORMAL_40_SKILLPROPS_CurPos < propSize)
     {
         property skillprop;
-        Printf( "%d : %.0f\n" , skillprop.id , skillprop.val );
     }
 } ZC_NORMAL_40_SKILLPROPS <optimize=false>;

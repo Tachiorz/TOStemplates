@@ -40,12 +40,6 @@ typedef struct
     char str2[str2Len];
     short str3Len;
     char str3[str3Len];
-//1600 210.3119 -827.7175
-    if (x > 1500 && x < 1700)
-    if (y > 100 && y < 300)
-    if (z > -900.0 && z < -700.0)
-    if (type == 2)
-    Printf("%d; %d; %03f; %03f; %03f; %s\n", FTell(), monsterId, x, y, z, str1);
     ENTER_MONSTER_CurPos = FTell();
     while (FTell()-ENTER_MONSTER_CurPos < propSize)
     {
