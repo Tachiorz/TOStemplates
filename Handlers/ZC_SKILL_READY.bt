@@ -5,6 +5,7 @@ typedef struct
     float unk3;
     uint16 unk4;
     uint16 unk5;
+    float unk6; // 1
     Position pos1;
     Position pos2;
 } ZC_SKILL_READY <optimize=false>;
