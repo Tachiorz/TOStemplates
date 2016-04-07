@@ -18,10 +18,10 @@
 #include "Handlers\BC_SERVER_ENTRY.bt"
 #include "Handlers\BC_START_GAMEOK.bt"
 // BC_NORMAL
-#include "Handlers\BC_NORMAL_COMMANDER_MOVE_OK.bt"
-#include "Handlers\BC_NORMAL_UNKNOWN_1.bt"
-#include "Handlers\BC_NORMAL_PET_INFORMATION.bt"
-#include "Handlers\BC_NORMAL_ZONE_TRAFFIC.bt"
+#include "Handlers\BC_NORMAL_2_COMMANDER_MOVE_OK.bt"
+#include "Handlers\BC_NORMAL_4.bt"
+#include "Handlers\BC_NORMAL_8.bt"
+#include "Handlers\BC_NORMAL_11_ZONE_TRAFFIC.bt"
 
 // Client -> Zone
 #include "Handlers\CZ_CONNECT.bt"

@@ -6,7 +6,8 @@ typedef struct
     short item_prop_size;
     short unk;
     uint64 worldId;
-    int key;
+    byte slot;
+    byte bin1[3];
     int i1;
     ZC_ITEM_EQUIP_LIST_CurPos = FTell();
     while (FTell()-ZC_ITEM_EQUIP_LIST_CurPos < item_prop_size)

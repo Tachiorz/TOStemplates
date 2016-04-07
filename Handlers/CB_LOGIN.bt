@@ -4,5 +4,6 @@ typedef struct
     byte passwordMD5[16];
     byte unkByte1;
     byte unkByte2;
+    byte b3; // [i10671 (2015-10-26)] ?
     ubyte ip[4];
 } CB_LOGIN <optimize=false>;

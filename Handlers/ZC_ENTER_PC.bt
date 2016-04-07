@@ -2,8 +2,7 @@ typedef struct
 {
     uint32 pcId; // A65F0B00
     Position position; // 00001DC4, 00008243, 002080C4
-    float unk1; // 0000803F
-    uint32 unk2; // 00000000
+    Vector direction;
     uint16 unk3; // 0000
     uint64 socialInfoId; // EE2500003C010000
     byte pose; // 00
@@ -13,6 +12,7 @@ typedef struct
     uint32 maxHP; // EE00
     uint16 currentSP; // 6900
     uint16 maxSP; // 6900
+    int i4; // [i11025 (2016-02-26)] 
     uint32 currentStamina; // A8610000
     uint32 maxStamina; // A8610000
     byte unk6; // 00
@@ -21,5 +21,6 @@ typedef struct
     uint32 unk9; // FFFFFFFF
     byte unk10; // 00
     Commander commander;
-    byte partyName [48+1]; // "None"
+    // [i11025 (2016-02-26)] Removed?
+    // byte partyName [48+1]; // "None"
 } ZC_ENTER_PC <optimize=false>;

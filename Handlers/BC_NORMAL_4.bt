@@ -5,4 +5,4 @@ typedef struct
     int barrackMapId; // ? matches id, but doesn't seem to work
     byte unk1;
     uint64 unk2;
-} BC_NORMAL_UNKNOWN_1 <optimize=false>;
+} BC_NORMAL_4 <optimize=false>;

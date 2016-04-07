@@ -6,4 +6,4 @@ typedef struct
     uint64 accountId;
     byte unk1;
     Position Pos;
-} BC_NORMAL_COMMANDER_MOVE_OK <optimize=false>;
+} BC_NORMAL_2_COMMANDER_MOVE_OK <optimize=false>;

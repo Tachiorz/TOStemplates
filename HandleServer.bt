@@ -23,10 +23,10 @@ switch( GetPacketName(Op) )
         FSeek(NORMAL_CurrentPos);
         switch (NORMAL_SUBOP)
         {
-            case 0x2: BC_NORMAL_COMMANDER_MOVE_OK packet; break;
-            //case 0x4: BC_NORMAL_UNKNOWN_1 packet; break;
-            //case 0x8: BC_NORMAL_PET_INFORMATION packet; break;
-            //case 0xB: BC_NORMAL_ZONE_TRAFFIC packet; break;
+            case 0x2: BC_NORMAL_2_COMMANDER_MOVE_OK packet; break;
+            //case 0x4: BC_NORMAL_4 packet; break;
+            //case 0x8: BC_NORMAL_8 packet; break;
+            //case 0xB: BC_NORMAL_11_ZONE_TRAFFIC packet; break;
             default: UNKNOWN_NORMAL packet;
         }
         break;

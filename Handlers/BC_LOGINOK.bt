@@ -5,4 +5,5 @@ typedef struct
     char Name[33];
     int accountPrivileges;
     char sessionKey[64];
+    int i2; // [i10725 (2015-11-03)] ?
 } BC_LOGINOK <optimize=false>;

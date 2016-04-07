@@ -31,6 +31,7 @@ typedef struct
     byte CharacterCount;
     char TeamName[64];
     uint16 accountPropSize;
+    short s1; // [i11257 (2016-03-25)]
     BC_COMMANDER_LIST_CurPos = FTell();
     while (FTell()-BC_COMMANDER_LIST_CurPos < accountPropSize)
     {

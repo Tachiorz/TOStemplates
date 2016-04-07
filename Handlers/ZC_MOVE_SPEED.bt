@@ -3,4 +3,6 @@ typedef struct
         uint32 pcId;
         float movementSpeed;
         float unk1;
+        // [i11257 (2016-03-25)]
+        byte b;
 } ZC_MOVE_SPEED <optimize=false>;

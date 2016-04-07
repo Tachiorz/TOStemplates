@@ -6,4 +6,5 @@ typedef struct
     short Gender;
     Position Pos;
     byte Hair;
+    int startingCity; // i11025 (2016-02-26)
 } CB_COMMANDER_CREATE <optimize=false>;

@@ -1,5 +1,5 @@
 typedef struct
 {
     uint32 pcId;
-    uint16 unk1;
+    uint16 effect;
 } ZC_LEAVE <optimize=false>;

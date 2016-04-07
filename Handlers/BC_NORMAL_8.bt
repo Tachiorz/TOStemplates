@@ -5,4 +5,4 @@ typedef struct
 {
     NORMAL_header header;
     uint petsCount; 
-} BC_NORMAL_PET_INFORMATION <optimize=false>;
+} BC_NORMAL_8 <optimize=false>;

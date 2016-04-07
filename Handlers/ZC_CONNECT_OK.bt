@@ -7,8 +7,11 @@ typedef struct
     byte accountPrivileges;
     uint16 unk2;
     uint64 unk3;
+    byte b1; // [i11257 (2016-03-25)]
     lpString passport;
-    short s;
+    // [i109XX (2015-12-01)] Added
+    // [i11025 (2016-02-26)] Removed?
+    //short s;
     uint32 pcId;
     uint32 unk5;
     CommanderInfo commander;

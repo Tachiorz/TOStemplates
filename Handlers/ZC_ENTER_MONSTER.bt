@@ -11,6 +11,7 @@ typedef struct
     int hp, maxHp;
     short s1;
     float i1;
+    short s2; // [i11025 (2016-02-26)]
 
     // MONSTER
     int monsterId;
@@ -18,14 +19,14 @@ typedef struct
     int maxhp;
     //short s2; // max shield?
     //char bin1[2];
-    float f0;
+    // float f0; [i11025 (2016-02-26)] Removed?
     int level;
     float sdr;
     byte b2;
     char bin2[3];
 
     int GenType;
-    int i5;
+    int namesSize;
     byte propSize;
     byte b4;
 

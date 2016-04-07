@@ -4,12 +4,15 @@ typedef struct
 
     uint32 pcId;
     byte familyName [64];
-    byte commanderName [64];
-    uint16 unk1; // 0000
-    uint16 unk2; // A30F
-    uint32 unk3; // 01000000
-    uint32 unk4; // 022E5600
-    uint32 unk5; // 30950900
-    uint32 unk6; // 00000000
-    string chatText;
+    byte commanderName [65];
+    byte b1;
+    short job;
+    int i1;
+    byte gender;
+    byte hair;
+    byte bin1[2];
+    int i2;
+    int i3; // [i11257 (2016-03-25)]
+    float displayTime;
+    string message;
 } ZC_CHAT <optimize=false>;

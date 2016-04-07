@@ -17,4 +17,4 @@ typedef struct
     uint16 zoneMaxPcCount;
     uint16 mapAvailableCount;
     SingleMapTraffic SingleMapTrafficList[mapAvailableCount];
-} BC_NORMAL_ZONE_TRAFFIC <optimize=false>;
+} BC_NORMAL_11_ZONE_TRAFFIC <optimize=false>;
