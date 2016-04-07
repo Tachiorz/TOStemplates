@@ -1,9 +1,8 @@
-// subOp = 0x4
-
 typedef struct
 {
     NORMAL_header header;
     uint64 accountId;
+    int barrackMapId; // ? matches id, but doesn't seem to work
     byte unk1;
     uint64 unk2;
 } BC_NORMAL_UNKNOWN_1 <optimize=false>;

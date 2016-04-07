@@ -21,7 +21,11 @@ typedef struct
 {
     Commander commander;
     uint64 socialInfoId;
-    uint16 index;
+    // [i11025 (2016-02-26)]
+    // Index was previously stored as a short, now there seem
+    // to be two byte, with the first being the index.
+    byte index;
+    byte b1;
     uint16 mapId;
     float d3;
     int d4;
