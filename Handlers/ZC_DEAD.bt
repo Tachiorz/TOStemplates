@@ -1,0 +1,7 @@
+typedef struct
+{
+    short size;
+
+    int handles[(size-12) / 4];
+    int end;
+} ZC_DEAD <optimize=false>;

@@ -85,6 +85,8 @@ switch( GetPacketName(Op) )
     case "ZC_SHOW_EMOTICON": ZC_SHOW_EMOTICON packet; break;
     case "ZC_CREATE_SCROLLLOCKBOX": ZC_CREATE_SCROLLLOCKBOX packet; break;
     case "ZC_MOVE_STOP": ZC_MOVE_STOP packet; break;
+    case "ZC_MOVE_PATH": ZC_MOVE_PATH packet; break;
+    case "ZC_DEAD": ZC_DEAD packet; break;
     
     case "ZC_NORMAL":
         NORMAL_CurrentPos = FTell();

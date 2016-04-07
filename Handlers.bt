@@ -89,6 +89,8 @@
 #include "Handlers\ZC_SHOW_EMOTICON.bt"
 #include "Handlers\ZC_CREATE_SCROLLLOCKBOX.bt"
 #include "Handlers\ZC_MOVE_STOP.bt"
+#include "Handlers\ZC_MOVE_PATH.bt"
+#include "Handlers\ZC_DEAD.bt"
 
 // ZC_NORMAL
 #include "Handlers\ZC_NORMAL_28.bt"
