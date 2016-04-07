@@ -1,7 +1,7 @@
 typedef struct
 {
     uint32 pcId;
+    byte b;
     byte isSit;
     // [i11257 (2016-03-25)] ?
-    byte b;
 } ZC_REST_SIT <optimize=false>;

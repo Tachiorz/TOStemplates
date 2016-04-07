@@ -30,16 +30,11 @@ typedef struct
     byte propSize;
     byte b4;
 
-    short nameLen;
-    char name[nameLen];
-    short unameLen;
-    char uname[unameLen];
-    short str1Len;
-    char str1[str1Len];
-    short str2Len;
-    char str2[str2Len];
-    short str3Len;
-    char str3[str3Len];
+    lpString name;
+    lpString uname;
+    lpString dialogName;
+    lpString warpName; //?
+    lpString str3;
     ENTER_MONSTER_CurPos = FTell();
     while (FTell()-ENTER_MONSTER_CurPos < propSize)
     {

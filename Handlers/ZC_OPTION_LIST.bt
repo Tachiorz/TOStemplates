@@ -2,5 +2,5 @@ typedef struct
 {
     uint16 size;
     
-    byte unk2;
+    string str; // format: <option> <value> <option> <value>...
 } ZC_OPTION_LIST <optimize=false>;

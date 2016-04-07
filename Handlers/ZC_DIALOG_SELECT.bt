@@ -12,6 +12,6 @@ typedef struct
     short size;
 
     int handle;
-    short Unk;
-    lpString strings[4] <optimize=false>;
+    short count;
+    lpString strings[count] <optimize=false>;
 } ZC_DIALOG_SELECT <optimize=false>;
