@@ -1,0 +1,16 @@
+// Author: exec
+
+typedef struct
+{
+    short size;
+    int i1;
+    int count; // ?
+
+    Position attackerPos;
+    Position targetPos;
+    Vector targetDir;
+
+    byte b1[13]; // 01 00...
+
+    int targetHandles[count];
+} CZ_CLIENT_HIT_LIST <optimize=false>;

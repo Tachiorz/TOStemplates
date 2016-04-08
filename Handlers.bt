@@ -34,6 +34,7 @@
 #include "Handlers\CZ_QUEST_NPC_STATE_CHECK.bt"
 #include "Handlers\CZ_SKILL_TARGET_ANI.bt"
 #include "Handlers\CZ_ROTATE.bt"
+#include "Handlers\CZ_CLIENT_HIT_LIST.bt"
 
 // Zone -> Client
 #include "Handlers\ZC_OBJECT_PROPERTY.bt"
