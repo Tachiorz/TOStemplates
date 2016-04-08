@@ -1,0 +1,5 @@
+typedef struct
+{
+    int handle;
+    Commander c;
+} ZC_UPDATED_PCAPPEARANCE <optimize=false>;

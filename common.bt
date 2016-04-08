@@ -57,6 +57,7 @@ byte isStringProperty(int id)
         case "BuffEndTime": return true;
         case "QSTARTZONETYPE": return true;
         case "LastUIOpenPos": return true;
+        case "JobName": return true;
     }
     return false;
 }

@@ -1,0 +1,12 @@
+local uint ZC_NORMAL_360_CurPos;
+
+typedef struct
+{
+    NORMAL_header header;
+    int i1;
+    ZC_NORMAL_360_CurPos = FTell();
+    while (FTell()-ZC_NORMAL_360_CurPos < header.size-16)
+    {
+        property prop;
+    }
+} ZC_NORMAL_360 <optimize=false>;

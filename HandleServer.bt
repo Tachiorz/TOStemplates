@@ -87,6 +87,9 @@ switch( GetPacketName(Op) )
     case "ZC_MOVE_STOP": ZC_MOVE_STOP packet; break;
     case "ZC_MOVE_PATH": ZC_MOVE_PATH packet; break;
     case "ZC_DEAD": ZC_DEAD packet; break;
+    case "ZC_UPDATE_ALL_STATUS": ZC_UPDATE_ALL_STATUS packet; break;
+    case "ZC_UPDATED_PCAPPEARANCE": ZC_UPDATED_PCAPPEARANCE packet; break;
+    case "ZC_PC_PROP_UPDATE": ZC_PC_PROP_UPDATE packet; break;
     
     case "ZC_NORMAL":
         NORMAL_CurrentPos = FTell();
@@ -112,6 +115,9 @@ switch( GetPacketName(Op) )
             case 291: ZC_NORMAL_291 packet; break;
             case 292: ZC_NORMAL_292 packet; break;
             case 307: ZC_NORMAL_307 packet; break;
+            case 312: ZC_NORMAL_312 packet; break;
+            case 355: ZC_NORMAL_355 packet; break;
+            case 360: ZC_NORMAL_360 packet; break;
             default: UNKNOWN_NORMAL packet;
         }
         break;

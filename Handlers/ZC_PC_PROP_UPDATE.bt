@@ -1,0 +1,13 @@
+typedef struct
+{
+    uint16 id;
+    byte val;
+} ZC_PC_PROP_UPDATE <read=ShowPropUpdate, optimize=false>;
+
+string ShowPropUpdate(ZC_PC_PROP_UPDATE &p)
+{
+    char ret[];
+    local string name = GetPropertyName(p.id);
+    SPrintf( ret,"%s(%d): %d" , name, p.id , p.val );
+    return( ret );
+}

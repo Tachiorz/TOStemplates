@@ -1,0 +1,8 @@
+typedef struct
+{
+    NORMAL_header header;
+    int charHandle;
+    byte b1;
+    byte b2;
+    byte b3;
+} ZC_NORMAL_355 <optimize=false>;

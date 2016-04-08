@@ -1,0 +1,11 @@
+// Author: exec
+
+typedef struct
+{
+    int handle;
+    int hp;
+    int maxHp;
+    short sp;
+    short maxSp;
+    int i1; // 19
+} ZC_UPDATE_ALL_STATUS <optimize=false>;
