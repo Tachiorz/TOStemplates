@@ -1,7 +1,24 @@
+local uint Ability_CurPos;
+
+typedef struct
+{
+    uint64 guid; //?
+    int id;
+    short propSize;
+    short s1;
+    Ability_CurPos = FTell();
+    while (FTell()-Ability_CurPos < propSize)
+    {
+        property prop;
+    }
+} Ability <optimize=false>;
+
 typedef struct
 {
     uint16 size;
     
     uint32 pcId;
     uint16 numberEntries;
+    short zlib;
+    Ability abilities[numberEntries];
 } ZC_ABILITY_LIST <optimize=false>;

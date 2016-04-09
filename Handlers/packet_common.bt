@@ -15,6 +15,7 @@ typedef struct
     int i7; //icbt2
     uint16 Hair;
     uint16 Pose;
+    int i8; // [i11025 (2016-02-26)] ?
 } Commander <optimize=false>;
 
 typedef struct
