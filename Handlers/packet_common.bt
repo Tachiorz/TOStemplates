@@ -71,3 +71,14 @@ typedef struct
     NORMAL_header header;
     byte UNKNOWN[header.size-12];
 } UNKNOWN_NORMAL <optimize=false>;
+
+typedef struct
+{
+    int subOp;
+} CUSTOM_COMMAND_header <optimize=false>;
+
+typedef struct
+{
+    NORMAL_header header;
+    byte UNKNOWN[header.size-10];
+} UNKNOWN_CUSTOM_COMMAND <optimize=false>;

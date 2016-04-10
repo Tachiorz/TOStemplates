@@ -1,3 +1,6 @@
+local int CUSTOM_COMMAND_SUBOP;
+local uint CUSTOM_COMMAND_CurrentPos;
+
 typedef struct 
 {
     Frame header;
@@ -27,7 +30,20 @@ switch( GetPacketName(Op) )
     case "CZ_SKILL_TARGET_ANI": CZ_SKILL_TARGET_ANI packet; break;
     case "CZ_ROTATE": CZ_ROTATE packet; break;
     case "CZ_CLIENT_HIT_LIST": CZ_CLIENT_HIT_LIST packet; break;
-    
+    case "CZ_CLIENT_HIT_LIST": CZ_CLIENT_HIT_LIST packet; break;
+
+    case "CZ_CUSTOM_COMMAND":
+        CUSTOM_COMMAND_CurrentPos = FTell();
+        //FSkip(2); // skip size
+        CUSTOM_COMMAND_SUBOP = ReadUShort();
+        FSeek(CUSTOM_COMMAND_CurrentPos);
+        switch (CUSTOM_COMMAND_SUBOP)
+        {
+            case 19: CZ_CUSTOM_COMMAND_19_CHOOSE_JOB packet; break;
+            default: UNKNOWN_CUSTOM_COMMAND packet;
+        }
+        break;
+
     default: if (Length-10 > 0) byte UNKNOWN[Length-10] <optimize=false, fgcolor=0x666666>;
 }
 
