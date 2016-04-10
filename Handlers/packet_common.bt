@@ -10,7 +10,7 @@ typedef struct
     byte Gender;
     byte b1;
     int Level;
-    int Items[20];
+    int Items[21];
     int i6; //icbt2
     int i7; //icbt2
     uint16 Hair;
