@@ -104,6 +104,7 @@
 #include "Handlers\ZC_JOB_PTS.bt"
 #include "Handlers\ZC_EXP_UP.bt"
 #include "Handlers\ZC_JOB_EXP_UP.bt"
+#include "Handlers\CZ_REQ_NORMAL_TX_NUMARG.bt"
 
 // ZC_NORMAL
 #include "Handlers\ZC_NORMAL_17_LVLUP.bt"
@@ -121,10 +122,11 @@
 #include "Handlers\ZC_NORMAL_217.bt"
 #include "Handlers\ZC_NORMAL_225.bt"
 #include "Handlers\ZC_NORMAL_229.bt"
-#include "Handlers\ZC_NORMAL_291.bt"
-#include "Handlers\ZC_NORMAL_292.bt"
 #include "Handlers\ZC_NORMAL_230.bt"
 #include "Handlers\ZC_NORMAL_234.bt"
+#include "Handlers\ZC_NORMAL_286.bt"
+#include "Handlers\ZC_NORMAL_291.bt"
+#include "Handlers\ZC_NORMAL_292.bt"
 #include "Handlers\ZC_NORMAL_301.bt"
 #include "Handlers\ZC_NORMAL_307.bt"
 #include "Handlers\ZC_NORMAL_312.bt"

@@ -1,0 +1,6 @@
+typedef struct
+{
+    NORMAL_header header;
+    int i;
+    short s[101];
+} ZC_NORMAL_286 <optimize=false>;
