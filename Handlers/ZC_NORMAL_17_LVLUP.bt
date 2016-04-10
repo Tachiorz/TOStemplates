@@ -1,0 +1,14 @@
+// Author: exec
+
+typedef struct
+{
+    NORMAL_header header;
+    int handle;
+    short s1;
+    short s2;
+    float effectSize;
+    int i1;
+    byte bin1[4];
+    float f2;
+    byte bin2[4];
+} ZC_NORMAL_17_LVLUP <optimize=false>;

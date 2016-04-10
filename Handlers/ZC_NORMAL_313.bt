@@ -1,0 +1,5 @@
+typedef struct
+{
+    NORMAL_header header;
+    lpString sessionKey;
+} ZC_NORMAL_313 <optimize=false>;

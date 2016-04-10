@@ -102,11 +102,12 @@ switch( GetPacketName(Op) )
         FSeek(NORMAL_CurrentPos);
         switch (NORMAL_SUBOP)
         {
+            case 17: ZC_NORMAL_17_LVLUP packet; break;
             case 20: ZC_NORMAL_20_CLASS_LVLUP packet; break;
         	case 28: ZC_NORMAL_28 packet; break;
             case 40: ZC_NORMAL_40_SKILLPROPS packet; break;
             case 44: ZC_NORMAL_44 packet; break;
-            case 81: ZC_NORMAL_81 packet; break;
+            case 81: ZC_NORMAL_81_NPC_CHAT packet; break;
             case 84: ZC_NORMAL_84 packet; break;
             case 142: ZC_NORMAL_142 packet; break;
             case 151: ZC_NORMAL_151_PET_LIST packet; break;
@@ -122,6 +123,7 @@ switch( GetPacketName(Op) )
             case 292: ZC_NORMAL_292 packet; break;
             case 307: ZC_NORMAL_307 packet; break;
             case 312: ZC_NORMAL_312 packet; break;
+            case 313: ZC_NORMAL_313 packet; break;
             case 355: ZC_NORMAL_355 packet; break;
             case 360: ZC_NORMAL_360 packet; break;
             default: UNKNOWN_NORMAL packet;

@@ -106,11 +106,12 @@
 #include "Handlers\ZC_JOB_EXP_UP.bt"
 
 // ZC_NORMAL
+#include "Handlers\ZC_NORMAL_17_LVLUP.bt"
 #include "Handlers\ZC_NORMAL_20_CLASS_LVLUP.bt"
 #include "Handlers\ZC_NORMAL_28.bt"
 #include "Handlers\ZC_NORMAL_44.bt"
 #include "Handlers\ZC_NORMAL_40_SKILLPROPS.bt"
-#include "Handlers\ZC_NORMAL_81.bt"
+#include "Handlers\ZC_NORMAL_81_NPC_CHAT.bt"
 #include "Handlers\ZC_NORMAL_84.bt"
 #include "Handlers\ZC_NORMAL_142.bt"
 #include "Handlers\ZC_NORMAL_151_PET_LIST.bt"
@@ -126,5 +127,6 @@
 #include "Handlers\ZC_NORMAL_234.bt"
 #include "Handlers\ZC_NORMAL_307.bt"
 #include "Handlers\ZC_NORMAL_312.bt"
+#include "Handlers\ZC_NORMAL_313.bt"
 #include "Handlers\ZC_NORMAL_355.bt"
 #include "Handlers\ZC_NORMAL_360.bt"
