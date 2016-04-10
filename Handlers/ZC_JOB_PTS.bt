@@ -1,0 +1,5 @@
+typedef struct
+{
+    short job;
+    short points;
+} ZC_JOB_PTS <optimize=false>;

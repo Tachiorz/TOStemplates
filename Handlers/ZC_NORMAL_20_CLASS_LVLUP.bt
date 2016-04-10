@@ -1,0 +1,12 @@
+// Author: exec
+
+typedef struct
+{
+    NORMAL_header header;
+    int handle;
+    byte b1;
+    int i1;
+    byte b2;
+    float effectSize;
+    byte bin[8];
+} ZC_NORMAL_20_CLASS_LVLUP <optimize=false>;

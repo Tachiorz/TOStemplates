@@ -1,0 +1,5 @@
+typedef struct
+{
+    int exp;
+    int jobExp; //?
+} ZC_EXP_UP <optimize=false>;

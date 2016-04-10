@@ -1,0 +1,10 @@
+typedef struct
+{
+    NORMAL_header header;
+    int count;
+    struct ZC_NORMAL_234_items
+    {
+        lpString str;
+        int i;
+    } items[count] <optimize=false>;
+} ZC_NORMAL_234 <optimize=false>;

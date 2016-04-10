@@ -91,6 +91,9 @@ switch( GetPacketName(Op) )
     case "ZC_UPDATED_PCAPPEARANCE": ZC_UPDATED_PCAPPEARANCE packet; break;
     case "ZC_PC_PROP_UPDATE": ZC_PC_PROP_UPDATE packet; break;
     case "ZC_ITEM_REMOVE": ZC_ITEM_REMOVE packet; break;
+    case "ZC_JOB_PTS": ZC_JOB_PTS packet; break;
+    case "ZC_EXP_UP": ZC_EXP_UP packet; break;
+    case "ZC_JOB_EXP_UP": ZC_JOB_EXP_UP packet; break;
     
     case "ZC_NORMAL":
         NORMAL_CurrentPos = FTell();
@@ -99,6 +102,7 @@ switch( GetPacketName(Op) )
         FSeek(NORMAL_CurrentPos);
         switch (NORMAL_SUBOP)
         {
+            case 20: ZC_NORMAL_20_CLASS_LVLUP packet; break;
         	case 28: ZC_NORMAL_28 packet; break;
             case 40: ZC_NORMAL_40_SKILLPROPS packet; break;
             case 44: ZC_NORMAL_44 packet; break;
@@ -113,6 +117,7 @@ switch( GetPacketName(Op) )
             case 225: ZC_NORMAL_225 packet; break;
             case 229: ZC_NORMAL_229 packet; break;
             case 230: ZC_NORMAL_230 packet; break;
+            case 234: ZC_NORMAL_234 packet; break;
             case 291: ZC_NORMAL_291 packet; break;
             case 292: ZC_NORMAL_292 packet; break;
             case 307: ZC_NORMAL_307 packet; break;
