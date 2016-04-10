@@ -2,5 +2,7 @@ typedef struct
 {
     NORMAL_header header;
     int monsterHandle;
-    Position pos; 
+    lpString str;
+    int x;
+    int y;
 } ZC_NORMAL_81_NPC_CHAT <optimize=false>;

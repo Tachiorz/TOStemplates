@@ -94,6 +94,9 @@ switch( GetPacketName(Op) )
     case "ZC_JOB_PTS": ZC_JOB_PTS packet; break;
     case "ZC_EXP_UP": ZC_EXP_UP packet; break;
     case "ZC_JOB_EXP_UP": ZC_JOB_EXP_UP packet; break;
+    case "ZC_PC": ZC_PC packet; break;
+    case "ZC_BUFF_ADD": ZC_BUFF_ADD packet; break;
+    case "ZC_BUFF_REMOVE": ZC_BUFF_REMOVE packet; break;
     
     case "ZC_NORMAL":
         NORMAL_CurrentPos = FTell();

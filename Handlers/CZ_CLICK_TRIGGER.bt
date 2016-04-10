@@ -1,0 +1,5 @@
+typedef struct
+{
+    int handle;
+    byte b;
+} CZ_CLICK_TRIGGER <optimize=false>; 

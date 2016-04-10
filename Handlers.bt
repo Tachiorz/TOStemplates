@@ -36,6 +36,9 @@
 #include "Handlers\CZ_ROTATE.bt"
 #include "Handlers\CZ_CLIENT_HIT_LIST.bt"
 #include "Handlers\CZ_ITEM_USE.bt"
+#include "Handlers\CZ_REQ_NORMAL_TX_NUMARG.bt"
+#include "Handlers\CZ_CLICK_TRIGGER.bt"
+#include "Handlers\CZ_DIALOG_SELECT.bt"
 
 // CZ_CUSTOM_COMMAND
 #include "Handlers\CZ_CUSTOM_COMMAND_19_CHOOSE_JOB.bt"
@@ -104,7 +107,9 @@
 #include "Handlers\ZC_JOB_PTS.bt"
 #include "Handlers\ZC_EXP_UP.bt"
 #include "Handlers\ZC_JOB_EXP_UP.bt"
-#include "Handlers\CZ_REQ_NORMAL_TX_NUMARG.bt"
+#include "Handlers\ZC_PC.bt"
+#include "Handlers\ZC_BUFF_ADD.bt"
+#include "Handlers\ZC_BUFF_REMOVE.bt"
 
 // ZC_NORMAL
 #include "Handlers\ZC_NORMAL_17_LVLUP.bt"

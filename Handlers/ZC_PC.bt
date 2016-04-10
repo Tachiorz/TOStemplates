@@ -1,0 +1,19 @@
+typedef struct
+{
+    short size;
+    int handle;
+    int type;
+    if (type == 0) //name
+    {
+        short s;
+        short s2;
+        int i;
+        lpString name;
+    }
+    else if (type == 2) //job
+    {
+        short job;
+        short s;
+        int i;
+    }
+} ZC_PC <optimize=false>;

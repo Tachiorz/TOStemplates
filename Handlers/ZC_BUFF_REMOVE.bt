@@ -1,0 +1,7 @@
+typedef struct
+{
+    int handle;
+    int buffId;
+    byte b;
+    int buffUID;
+} ZC_BUFF_REMOVE <optimize=false>;
