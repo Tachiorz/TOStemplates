@@ -124,6 +124,7 @@
 #include "Handlers\ZC_NORMAL_229.bt"
 #include "Handlers\ZC_NORMAL_230.bt"
 #include "Handlers\ZC_NORMAL_234.bt"
+#include "Handlers\ZC_NORMAL_235.bt"
 #include "Handlers\ZC_NORMAL_286.bt"
 #include "Handlers\ZC_NORMAL_291.bt"
 #include "Handlers\ZC_NORMAL_292.bt"

@@ -1,0 +1,14 @@
+typedef struct
+{
+    NORMAL_header header;
+    uint64 charId;
+    int cnt;
+    struct ZC_NORMAL_235_items
+    {
+        int i;
+        short job;
+        short s;
+        int i2;
+        FILETIME time;
+    } items[cnt] <optimize=false>;
+} ZC_NORMAL_235 <optimize=false>;

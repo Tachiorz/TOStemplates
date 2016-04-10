@@ -18,8 +18,10 @@ typedef struct
     local int item;
     CommanderCreateInfo character;
     BC_COMMANDER_LIST__ITEM items[20];
-    short i;
-    short s2[i];
+    short s;
+    short jobCnt;
+    short jobs[jobCnt];
+    int i;
 } BC_COMMANDER_LIST__COMMANDER <optimize=false>;
 
 typedef struct

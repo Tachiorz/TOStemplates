@@ -2,7 +2,7 @@
 typedef struct
 {
     short len; //?
-    short w1;
+    short job;
     int64 accountId;
     int64 characterId;
     char name[33];
