@@ -121,6 +121,7 @@ switch( GetPacketName(Op) )
             case 234: ZC_NORMAL_234 packet; break;
             case 291: ZC_NORMAL_291 packet; break;
             case 292: ZC_NORMAL_292 packet; break;
+            case 301: ZC_NORMAL_301 packet; break;
             case 307: ZC_NORMAL_307 packet; break;
             case 312: ZC_NORMAL_312 packet; break;
             case 313: ZC_NORMAL_313 packet; break;
