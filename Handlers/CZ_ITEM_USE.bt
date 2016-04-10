@@ -1,0 +1,5 @@
+typedef struct
+{
+    uint64 worldId;
+    int charHandle;
+} CZ_ITEM_USE <optimize=false>;

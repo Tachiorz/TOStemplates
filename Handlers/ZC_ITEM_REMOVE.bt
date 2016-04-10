@@ -1,0 +1,7 @@
+typedef struct
+{
+    uint64 worldId;
+    int amount;
+    byte msg;
+    byte invType;
+} ZC_ITEM_REMOVE <optimize=false>;

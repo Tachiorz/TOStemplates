@@ -90,6 +90,7 @@ switch( GetPacketName(Op) )
     case "ZC_UPDATE_ALL_STATUS": ZC_UPDATE_ALL_STATUS packet; break;
     case "ZC_UPDATED_PCAPPEARANCE": ZC_UPDATED_PCAPPEARANCE packet; break;
     case "ZC_PC_PROP_UPDATE": ZC_PC_PROP_UPDATE packet; break;
+    case "ZC_ITEM_REMOVE": ZC_ITEM_REMOVE packet; break;
     
     case "ZC_NORMAL":
         NORMAL_CurrentPos = FTell();

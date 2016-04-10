@@ -35,7 +35,11 @@
 #include "Handlers\CZ_SKILL_TARGET_ANI.bt"
 #include "Handlers\CZ_ROTATE.bt"
 #include "Handlers\CZ_CLIENT_HIT_LIST.bt"
+#include "Handlers\CZ_ITEM_USE.bt"
+
+// CZ_CUSTOM_COMMAND
 #include "Handlers\CZ_CUSTOM_COMMAND_19_CHOOSE_JOB.bt"
+
 
 // Zone -> Client
 #include "Handlers\ZC_OBJECT_PROPERTY.bt"
@@ -96,6 +100,7 @@
 #include "Handlers\ZC_UPDATE_ALL_STATUS.bt"
 #include "Handlers\ZC_UPDATED_PCAPPEARANCE.bt"
 #include "Handlers\ZC_PC_PROP_UPDATE.bt"
+#include "Handlers\ZC_ITEM_REMOVE.bt"
 
 // ZC_NORMAL
 #include "Handlers\ZC_NORMAL_28.bt"

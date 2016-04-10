@@ -31,6 +31,7 @@ switch( GetPacketName(Op) )
     case "CZ_ROTATE": CZ_ROTATE packet; break;
     case "CZ_CLIENT_HIT_LIST": CZ_CLIENT_HIT_LIST packet; break;
     case "CZ_CLIENT_HIT_LIST": CZ_CLIENT_HIT_LIST packet; break;
+    case "CZ_ITEM_USE": CZ_ITEM_USE packet; break;
 
     case "CZ_CUSTOM_COMMAND":
         CUSTOM_COMMAND_CurrentPos = FTell();
@@ -53,6 +54,9 @@ string DisplayClientPacket(ClientPacket &p)
 {
     local string PacketDisplayStr;
     PacketName = GetPacketName(p.Op);
-    SPrintf(PacketDisplayStr, "SEND@%s: %s (%d)", p.header.Time, PacketName, p.Op);
+    if (PacketName == "CZ_CUSTOM_COMMAND")
+        SPrintf(PacketDisplayStr, "SEND@%s: %s (%d) (%d)", p.header.Time, PacketName, p.Op, p.packet.header.subOp);
+    else
+        SPrintf(PacketDisplayStr, "SEND@%s: %s (%d)", p.header.Time, PacketName, p.Op);
     return PacketDisplayStr;
 }
