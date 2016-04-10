@@ -58,6 +58,7 @@ byte isStringProperty(int id)
         case "QSTARTZONETYPE": return true;
         case "LastUIOpenPos": return true;
         case "JobName": return true;
+        case "Medal_Get_Date": return true;
     }
     return false;
 }
