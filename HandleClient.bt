@@ -35,6 +35,7 @@ switch( GetPacketName(Op) )
     case "CZ_REQ_NORMAL_TX_NUMARG": CZ_REQ_NORMAL_TX_NUMARG packet; break;
     case "CZ_CLICK_TRIGGER": CZ_CLICK_TRIGGER packet; break;
     case "CZ_DIALOG_SELECT": CZ_DIALOG_SELECT packet; break;
+    case "CZ_DIALOG_ACK": CZ_DIALOG_ACK packet; break;
 
     case "CZ_CUSTOM_COMMAND":
         CUSTOM_COMMAND_CurrentPos = FTell();

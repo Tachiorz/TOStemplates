@@ -97,6 +97,8 @@ switch( GetPacketName(Op) )
     case "ZC_PC": ZC_PC packet; break;
     case "ZC_BUFF_ADD": ZC_BUFF_ADD packet; break;
     case "ZC_BUFF_REMOVE": ZC_BUFF_REMOVE packet; break;
+    case "ZC_SESSION_OBJ_REMOVE": ZC_SESSION_OBJ_REMOVE packet; break;
+    case "ZC_DIALOG_OK": ZC_DIALOG_OK packet; break;
     
     case "ZC_NORMAL":
         NORMAL_CurrentPos = FTell();
@@ -110,6 +112,7 @@ switch( GetPacketName(Op) )
         	case 28: ZC_NORMAL_28 packet; break;
             case 40: ZC_NORMAL_40_SKILLPROPS packet; break;
             case 44: ZC_NORMAL_44 packet; break;
+            case 58: ZC_NORMAL_58 packet; break;
             case 81: ZC_NORMAL_81_NPC_CHAT packet; break;
             case 84: ZC_NORMAL_84 packet; break;
             case 142: ZC_NORMAL_142 packet; break;

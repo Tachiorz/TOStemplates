@@ -1,0 +1,4 @@
+typedef struct
+{
+    int id;
+} ZC_SESSION_OBJ_REMOVE <optimize=false>;

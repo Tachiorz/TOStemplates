@@ -1,0 +1,4 @@
+typedef struct
+{
+    int i;
+} CZ_DIALOG_ACK <optimize=false>;

@@ -1,0 +1,7 @@
+typedef struct
+{
+    short size;
+
+    int handle;
+    char str[size-12] <optimize=false>;
+} ZC_DIALOG_OK <optimize=false>;

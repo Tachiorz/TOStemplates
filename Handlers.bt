@@ -39,6 +39,7 @@
 #include "Handlers\CZ_REQ_NORMAL_TX_NUMARG.bt"
 #include "Handlers\CZ_CLICK_TRIGGER.bt"
 #include "Handlers\CZ_DIALOG_SELECT.bt"
+#include "Handlers\CZ_DIALOG_ACK.bt"
 
 // CZ_CUSTOM_COMMAND
 #include "Handlers\CZ_CUSTOM_COMMAND_19_CHOOSE_JOB.bt"
@@ -110,13 +111,16 @@
 #include "Handlers\ZC_PC.bt"
 #include "Handlers\ZC_BUFF_ADD.bt"
 #include "Handlers\ZC_BUFF_REMOVE.bt"
+#include "Handlers\ZC_SESSION_OBJ_REMOVE.bt"
+#include "Handlers\ZC_DIALOG_OK.bt"
 
 // ZC_NORMAL
 #include "Handlers\ZC_NORMAL_17_LVLUP.bt"
 #include "Handlers\ZC_NORMAL_20_CLASS_LVLUP.bt"
 #include "Handlers\ZC_NORMAL_28.bt"
-#include "Handlers\ZC_NORMAL_44.bt"
 #include "Handlers\ZC_NORMAL_40_SKILLPROPS.bt"
+#include "Handlers\ZC_NORMAL_44.bt"
+#include "Handlers\ZC_NORMAL_58.bt"
 #include "Handlers\ZC_NORMAL_81_NPC_CHAT.bt"
 #include "Handlers\ZC_NORMAL_84.bt"
 #include "Handlers\ZC_NORMAL_142.bt"

@@ -1,0 +1,7 @@
+typedef struct
+{
+    NORMAL_header header;
+    int handle;
+    lpString str;
+    short s;
+} ZC_NORMAL_58 <optimize=false>;
