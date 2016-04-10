@@ -1,0 +1,9 @@
+typedef struct
+{
+    int pcId;
+    int x;
+    int y;
+    int z;
+    float f1;
+    float f2;
+} ZC_MOVE_PATH_MATH <optimize=false>;

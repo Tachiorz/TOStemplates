@@ -113,6 +113,9 @@
 #include "Handlers\ZC_BUFF_REMOVE.bt"
 #include "Handlers\ZC_SESSION_OBJ_REMOVE.bt"
 #include "Handlers\ZC_DIALOG_OK.bt"
+#include "Handlers\ZC_MOVE_PATH_MATH.bt"
+#include "Handlers\ZC_MAX_EXP_CHANGED.bt"
+#include "Handlers\ZC_HELP_ADD.bt"
 
 // ZC_NORMAL
 #include "Handlers\ZC_NORMAL_17_LVLUP.bt"

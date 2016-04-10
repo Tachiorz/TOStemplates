@@ -99,6 +99,9 @@ switch( GetPacketName(Op) )
     case "ZC_BUFF_REMOVE": ZC_BUFF_REMOVE packet; break;
     case "ZC_SESSION_OBJ_REMOVE": ZC_SESSION_OBJ_REMOVE packet; break;
     case "ZC_DIALOG_OK": ZC_DIALOG_OK packet; break;
+    case "ZC_MOVE_PATH_MATH": ZC_MOVE_PATH_MATH packet; break;
+    case "ZC_MAX_EXP_CHANGED": ZC_MAX_EXP_CHANGED packet; break;
+    case "ZC_HELP_ADD": ZC_HELP_ADD packet; break;
     
     case "ZC_NORMAL":
         NORMAL_CurrentPos = FTell();

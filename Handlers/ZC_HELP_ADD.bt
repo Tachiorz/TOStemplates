@@ -1,0 +1,5 @@
+typedef struct
+{
+    int id;
+    byte b;
+} ZC_HELP_ADD <optimize=false>;
