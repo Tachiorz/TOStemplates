@@ -79,6 +79,6 @@ typedef struct
 
 typedef struct
 {
-    NORMAL_header header;
-    byte UNKNOWN[header.size-10];
+    CUSTOM_COMMAND_header header;
+    byte UNKNOWN[12];
 } UNKNOWN_CUSTOM_COMMAND <optimize=false>;
