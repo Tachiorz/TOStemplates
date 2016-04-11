@@ -1,0 +1,21 @@
+typedef struct
+{
+    short size;
+
+    short count;
+    local uint SESSION_OBJECT_CurPos;
+    struct session_object
+    {
+        int id;
+        int i1;
+        uint64 worldId;
+        int i2;
+        short propSize;
+        short s;
+        SESSION_OBJECT_CurPos = FTell();
+        while (FTell()-SESSION_OBJECT_CurPos < propSize)
+        {
+            property prop;
+        }
+    } obj[count] <optimize=false>;
+} ZC_SESSION_OBJECTS <optimize=false>;

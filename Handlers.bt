@@ -116,6 +116,8 @@
 #include "Handlers\ZC_MOVE_PATH_MATH.bt"
 #include "Handlers\ZC_MAX_EXP_CHANGED.bt"
 #include "Handlers\ZC_HELP_ADD.bt"
+#include "Handlers\ZC_SESSION_OBJECTS.bt"
+
 
 // ZC_NORMAL
 #include "Handlers\ZC_NORMAL_17_LVLUP.bt"

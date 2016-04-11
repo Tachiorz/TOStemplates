@@ -59,6 +59,8 @@ byte isStringProperty(int id)
         case "LastUIOpenPos": return true;
         case "JobName": return true;
         case "Medal_Get_Date": return true;
+        case "LastGenPosServer": return true;
+        case "DROPITEM_REQUEST1_TRL": return true;
     }
     return false;
 }
