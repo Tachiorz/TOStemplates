@@ -504,6 +504,7 @@ case 0xDC9: result ="CZ_SKILL_TOOL_GROUND_POS"; break;
 case 0xDBC: result ="CZ_CHANGE_HEAD"; break;
 case 0xDBD: result ="CZ_CREATE_ARROW_CRAFT"; break;
 case 0xE26: result ="CZ_REQ_GM_ORDER"; break;
+case 0xE27: result ="CZ_REPORT_AUTOBOT"; break;
 case 0xD98: result ="CZ_MYPAGE_COMMENT_ADD"; break;
 case 0xD99: result ="CZ_MYPAGE_COMMENT_DELETE"; break;
 case 0xD9B: result ="CZ_GET_TARGET_MYPAGE"; break;
@@ -618,11 +619,11 @@ case 0xE1F: result ="CZ_DUMMYPC_SKILL_POS"; break;
 case 0xE21: result ="CZ_PARTY_MEMBER_SKILL_USE"; break;
 case 0xE22: result ="CZ_PARTY_MEMBER_SKILL_ACCEPT"; break;
 case 0xE24: result ="CZ_CHECK_PING"; break;
-case 0xE2A: result ="CZ_WAREHOUSE_TAKE_LIST"; break;
-case 0xE27: result ="CZ_PARTY_INVENTORY_LOAD"; break;
-case 0xE28: result ="CZ_REQ_MOVE_PARTYINV_TO_ACCOUNT"; break;
-case 0xE29: result ="CZ_REQ_CancelGachaCube"; break;
-case 0xE2B: result ="CZ_PVP_COMMAND"; break;
+case 0xE2B: result ="CZ_WAREHOUSE_TAKE_LIST"; break;
+case 0xE28: result ="CZ_PARTY_INVENTORY_LOAD"; break;
+case 0xE29: result ="CZ_REQ_MOVE_PARTYINV_TO_ACCOUNT"; break;
+case 0xE2A: result ="CZ_REQ_CancelGachaCube"; break;
+case 0xE2C: result ="CZ_PVP_COMMAND"; break;
 
         
         default: result ="UNKNOWN";

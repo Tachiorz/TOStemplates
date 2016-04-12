@@ -45,6 +45,7 @@ switch( GetPacketName(Op) )
         switch (CUSTOM_COMMAND_SUBOP)
         {
             case 19: CZ_CUSTOM_COMMAND_19_CHOOSE_JOB packet; break;
+            case 22: CZ_CUSTOM_COMMAND_22_PLACE_CAMPFIRE packet; break;
             default: UNKNOWN_CUSTOM_COMMAND packet;
         }
         break;

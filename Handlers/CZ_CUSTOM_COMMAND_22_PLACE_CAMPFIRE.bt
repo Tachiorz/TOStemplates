@@ -1,0 +1,6 @@
+typedef struct
+{
+    CUSTOM_COMMAND_header header;
+    int x;
+    int y;
+} CZ_CUSTOM_COMMAND_22_PLACE_CAMPFIRE <optimize=false>;
